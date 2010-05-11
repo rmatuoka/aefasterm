@@ -5,5 +5,7 @@ class ProdutosController < ApplicationController
     @Categoria = @Section.categories.find(params[:categoria_id])
     
     @Produto = @Categoria.products.find(params[:id])
+    
+    @Imagens = @Produto.product_images.find(:all)
   end
 end

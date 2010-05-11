@@ -58,7 +58,9 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :linhas do |linhas|
     linhas.resources :categorias do |categorias|
-      categorias.resources :produtos
+      categorias.resources :produtos do |produtos|
+        produtos.resources :imagens
+      end
     end
   end
 

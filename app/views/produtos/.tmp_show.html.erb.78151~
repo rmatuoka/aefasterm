@@ -48,14 +48,14 @@
 										<br><br>
 									<%end%>
 									<%if counter == 0%>
-										<%=lightbox_image_tag(@Servidor + img.image.url("p_medio"), @Servidor + img.image.url(), :title => img.legend)%>
+										<%=image_tag(@Servidor + img.image.url("p_medio"))%>
 									<%else%>
-										<%=lightbox_image_tag(@Servidor + img.image.url("thumb"), @Servidor + img.image.url(), :title => img.legend)%>
+										<%=image_tag(@Servidor + img.image.url("thumb"))%>
 									<%end%>
 									
 									<%counter = counter + 1%>
+									
 								<%end%>
-								
 							</center>
 						</div>
 					</div>

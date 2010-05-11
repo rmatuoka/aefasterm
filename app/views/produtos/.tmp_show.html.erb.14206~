@@ -33,30 +33,19 @@
 					<div id="BoxProdutos">
 						<div id="Produtos" style="padding:20px 0px 0px 15px;">
 							<span class="Titulo"><%=@Produto.title%></span>
-							<br>
-							<span class="Corpo"><%=@Produto.description%></span>	
+							
+							<span class="Corpo"><%=@Produto.title%></span>	
 						</div>
 						
 						
 						<div id="Categorias">
-							<!-- IMAGENS -->
-							<center>
-								<%
-								counter = 0
-								@Imagens.each do |img|%>
-									<%if counter == 1%>
-										<br><br>
-									<%end%>
-									<%if counter == 0%>
-										<%=lightbox_image_tag(@Servidor + img.image.url("p_medio"), @Servidor + img.image.url(), :title => img.legend)%>
-									<%else%>
-										<%=lightbox_image_tag(@Servidor + img.image.url("thumb"), @Servidor + img.image.url(), :title => img.legend)%>
-									<%end%>
-									
-									<%counter = counter + 1%>
+							<%if !@Categorias.blank?%>
+								<%@Categorias.each do |c|%>
+									<div id="<%=c.id.to_s%>" class="Item">
+										<%=link_to_remote c.title, :url => linha_categoria_path(@Section, c), :update => "update-produtos", :method => :get,:loading => "$('loading-schedule').show();", :loaded => "$('loading-schedule').hide();", :onMouseover => "overCat('#"+ c.id.to_s+"')", :onMouseout => "outCat('#"+ c.id.to_s+"')"%>
+									</div>
 								<%end%>
-								
-							</center>
+							<%end%>
 						</div>
 					</div>
 				</div>
