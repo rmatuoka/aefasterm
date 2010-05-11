@@ -1,0 +1,84 @@
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/agende_uma_visita.png", :alt => "Agende uma Visita")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Contato</span><br>
+				
+					<div id="Texto">
+							<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+							</p>
+					</div>
+					
+					<!-- FORM -->
+					<p align=="center">
+					<% form_for(@Visita, :url => { :controller => "contato", :action => "show", :id => @objeto.id ) do |f| %>
+						<table width="400" cellpadding="0" cellspacing="0" border="0">
+						<label>
+						<tr>
+						<td width="65"><p>Nome</p></td>
+						<td><%=f.text_field :name%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>E-Mail</p></td>
+						<td><%=f.text_field :email%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>Telefone</p></td>
+						<td><%=f.text_field :phone%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>Endereço</p></td>
+						<td><%=f.text_field :adress%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>Número</p></td>
+						<td><%=f.text_field :phone%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>CEP</p></td>
+						<td><%=f.text_field :postalcode%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>Cidade</p></td>
+						<td><%=f.text_field :city%></td>
+						</tr>
+						</label>
+						<label>
+						<tr>
+						<td><p>Estado</p></td>
+						<td><%=f.text_field :state%></td>
+						</tr>
+						</label>
+						<tr>
+						<td colspan="2"><%= image_submit_tag "botoes/enviar_blue.gif", :alt => "Enviar" %></td>
+						</tr>
+						
+						</table>
+					<%end%>
+					</p>
+				</div>
+			</div>
+		</div>

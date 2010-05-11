@@ -1,0 +1,54 @@
+<%content_for :head do%>
+<%= stylesheet_link_tag "produtos"%>
+
+<script>
+	function overCat(x)
+	{
+		$j(x).removeClass("Item");
+		$j(x).addClass("ItemOn");
+	}
+	
+	function outCat(x)
+	{
+		$j(x).removeClass("ItemOn");
+		$j(x).addClass("Item");
+	}
+</script>
+<%end%>
+
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/produtos.png", :alt => "Produtos")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<div class="HeaderProdutos"><%= image_tag("produtos/header_home.png")%></div>
+					<div id="BoxProdutos">
+						<div id="Produtos">
+							<div id="update-produtos">
+								
+							</div>
+							<center><%= image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-schedule' %></center>	
+						</div>
+						
+						
+						<div id="Categorias">
+							<%if !@Categorias.blank?%>
+								<%@Categorias.each do |c|%>
+									<div id="<%=c.id.to_s%>" class="Item">
+										<%=link_to_remote c.title, :url => linha_categoria_path(@Section, c), :update => "update-produtos", :method => :get,:loading => "$('loading-schedule').show();", :loaded => "$('loading-schedule').hide();", :onMouseover => "overCat('#"+ c.id.to_s+"')", :onMouseout => "outCat('#"+ c.id.to_s+"')"%>
+									</div>
+								<%end%>
+							<%end%>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

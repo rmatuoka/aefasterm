@@ -1,0 +1,100 @@
+#BoxProdutos
+{
+	margin:0px;
+}
+
+	#BoxProdutos #Categorias
+	{
+		width:277px;
+		background-image:url("../images/produtos/bg_box_left.jpg");
+		background-repeat:repeat-y;
+		/*border:1px solid red;*/		
+		height:auto;
+		min-height:300px;
+	}
+	
+	#BoxProdutos #Produtos
+	{
+		/*border:1px solid red;*/
+		float:right;
+		width:406px;
+	}
+
+
+.Item
+{
+	width:272px;
+	height:19px;
+	background-color:#5B8EB5;
+	text-align:right;
+	font-family:Verdana;
+	font-size:12px;
+	color:#FFFFFF;
+	margin-bottom:1px;
+}
+
+.ItemOn
+{
+	width:275px;
+	height:19px;
+	background-color:#FFFFFF;
+	text-align:right;
+	font-family:Verdana;
+	font-size:12px;
+	color:#FFFFFF;
+	margin-bottom:1px;
+}
+
+	.Item a
+	{
+		color:#FFFFFF;
+		margin-right:5px;
+	}
+	
+	.ItemOn a:hover
+	{
+		color:#C26737;
+		margin-right:5px;
+	}
+	
+.Produto
+{
+	border-bottom:1px solid #CCCCCC;
+	padding:6px 8px;
+}
+	.Produto .Nome
+	{
+		width:350px;
+		display:inline-block;	
+	}
+	
+		.Produto .Nome a
+		{
+			font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size:11px;
+			color:#666666;	
+		}
+	
+	.Produto .Icone
+	{
+		vertical-align:center;
+	}
+	
+	#Produtos .Titulo
+	{
+		font-family:Verdana;
+		font-size:14px;
+		color:#C16637;
+	}
+	
+	#Produtos .Corpo
+	{
+		font-family:Verdana;
+		font-size:12px;
+		color:#666666;
+	}
+	
+.HeaderProdutos
+{
+	height:138px;
+}

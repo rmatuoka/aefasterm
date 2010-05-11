@@ -1,0 +1,6 @@
+<%@Produtos.each do |p|%>
+<div class="Produto">
+	<span class="Nome"><%=link_to p.title, linha_categoria_produto_path(@Section, @Categoria, p)%></span>
+	<span class="Icone"><%=link_to image_tag("bullet_mais_eventos.gif"), linha_categoria_produto_path(@Section, @Categoria, p)%></span>
+</div>
+<%end%>

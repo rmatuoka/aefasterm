@@ -1,0 +1,30 @@
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/noticias.png", :alt => "Notícias Fasterm")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
+					<!-- <span class="Titulo"><%= image_tag("bullet_mais.png")%> Título</span><br>-->
+					
+					<%@Noticias.each do |n|%>
+					<div id="Evento">
+						<%=link_to image_tag("dest_eventos.jpg"), noticia_path(n)%>
+						<span class="Data"><%=n.created_at.to_date.strftime("%d/%m/%Y")%></span>
+						<span class="Titulo"><%=n.title%></span>
+						<span class="Icones">
+							<%=link_to image_tag("bullet_mais_eventos.gif"), noticia_path(n)%>
+							<%=link_to image_tag("bullet_foto.gif"), home_path%>
+						</span>	
+					</div>
+					<%end%>
+				</div>
+			</div>
+		</div>

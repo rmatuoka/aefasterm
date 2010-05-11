@@ -1,0 +1,42 @@
+<% remote_form_for RequestCatalog.find(params[:id]), :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| %>
+	<p class="TextoBottom">
+		<label>
+			<span class="labelFormHome">Nome:</span>
+			<%=f.text_field :name, :class => "form", :style => "width:233px;"%>
+		</label><br><br>
+		
+		<label>
+			<span class="labelFormHome">E-Mail:</span>
+			<%=f.text_field :email, :class => "form", :style => "width:233px;"%>
+		</label><br><br>
+		
+		<label>
+			<span class="labelFormHome">Endereço:</span>
+			<%=f.text_field :address, :class => "form", :style => "width:233px;"%>
+		</label><br><br>
+		
+		<label>
+			<span class="labelFormHome">Número:</span>
+			<%=f.text_field :number, :class => "form", :style => "width:233px;"%>
+		</label><br><br>
+		
+		<label>
+			<span class="labelFormHome">CEP:</span>
+			<%=f.text_field :postalcode, :class => "form", :style => "width:233px;"%>
+		</label><br><br>
+		
+		<label>
+			<span class="labelFormHome">Cidade:</span>
+			<%=f.text_field :city, :class => "form", :style => "width:233px;"%>
+		</label><br><br>
+		
+		<label>
+			<span class="labelFormHome">Estado:</span>
+			<%=f.text_field :state, :class => "form", :style => "width:233px;"%>
+		</label>
+	</p>
+	<p class="Botao">
+		<%= image_submit_tag "botoes/avancar.gif", :alt => "Avançar" %>
+	</p>
+<%end%>
+<center><%= image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' %></center>

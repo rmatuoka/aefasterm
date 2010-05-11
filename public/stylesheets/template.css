@@ -1,0 +1,509 @@
+/*
+@font-face
+{
+	font-family:"Myriad Pro";
+	src:url(/fonts/MyriadPro-Regular.eot);
+	src:local('Myriad Pro'),local('Myriad Pro'),url(/fonts/embed/MyriadPro-Regular.ttf) format('truetype');
+	}
+*/
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family:Trebuchet MS, Arial;
+}
+
+img
+{
+	border:none;
+}
+
+p
+{
+	text-align:justify;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+p
+{
+	font-size:11px;
+	color:#333333;
+	font-family:Verdana;
+}
+
+body
+{
+	text-align:center;
+	background-image:url("../images/bg_all.jpg");
+	background-repeat:repeat-y;
+}
+
+#Geral
+{
+	position:relative;
+	width:961px;
+	margin:auto;
+	text-align:left;
+	border:1px solid transparent;
+	background-image:url("../images/bg_header.jpg");
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+/*-----------------------------_HEADER*/
+	#Geral #Header
+	{
+		width:100%;
+		height:111px;
+		/*border:1px solid blue;*/
+	}
+	
+	#Geral #Header #Logo
+	{
+		margin:26px 0px 0px 26px;
+	}
+	
+	#Geral #Header #Busca
+	{
+		position:absolute;
+		left:703px;
+		width:249px;
+		height:41px;
+		background-image:url("../images/search.png");
+		background-repeat:no-repeat;
+		/*border:1px solid green;*/
+		top:0px;
+		!important
+	}
+	
+	#Geral #Header #Menu
+	{
+		position:absolute !important;
+		float:right;
+		top:76px;
+		left:550px;
+	}
+	
+		#Geral #Header #Menu ul li
+		{
+			display:inline;
+			margin-right:12px;
+		}
+/*-----------------------------_DESTAQUE*/		
+	#Geral #Highlight
+	{
+		height:320px;
+		/*border:1px solid yellow;*/
+	}
+	
+		#Geral #Highlight #Galeria
+		{
+			display:none;
+		}
+		
+			#Geral #Highlight #navegar
+			{
+	 			float:right;
+			}
+		
+			#Geral #Highlight #navegar a
+			{
+	 			padding:2px 5px 5px 5px;
+				background-color:#B14823;
+				color:#DBAB9A;
+				width:21px;
+				height:19px;
+				margin-right:1px;
+				text-align:center;
+				font-size:14px;
+			}
+			
+			#Geral #Highlight #navegar a:hover
+			{
+				background-color:#0A6598;
+				color:#7FB2CE;
+			}
+			
+			#Geral #Highlight #navegar .activeSlide
+			{
+				background-color:#0A6598;
+				color:#7FB2CE;
+			}
+		
+		
+
+/*-----------------------------_CONTENT*/	
+	#Geral #Content
+	{
+		margin:17px 0px 0px 0px;
+		/*background-color:#FBFBFB;*/
+		/*border:1px solid red;*/
+	}
+
+		#Geral #Content #HomeLeft
+		{
+			width:685px;
+			/*border:1px solid red;*/
+		}
+
+/*-----------------------------_CONTENT RIGHT*/		
+		#Geral #Content #HomeRight
+		{
+			float:right;
+			width:245px;
+			/*border:1px solid red;*/
+		}
+		
+		#Geral #Content #HomeRight #BoxNews
+		{
+			width:245px;
+			background-color:#F4F4F4;
+			text-align:center;
+			padding-bottom:13px;
+			margin-bottom:22px;
+		}
+		
+			#Geral #Content #HomeRight #BoxNews .Noticia
+			{
+				width:218px;
+				background-image:url("../images/over_noticia.png");
+				background-repeat:no-repeat;
+				/*border:1px solid red;*/
+				text-align:left;
+				padding-left:8px;
+				margin-left:10px;
+				margin-bottom:2px;
+			}
+			
+			#Geral #Content #HomeRight #BoxNews .Imagem
+			{
+				margin-bottom:20px;
+			}
+			
+				#Geral #Content #HomeRight #BoxNews .Noticia .TituloNoticia
+				{
+					color:#0072C5;
+					font-size:11px;
+					display:block;
+				}
+				
+				#Geral #Content #HomeRight #BoxNews .Noticia .CorpoNoticia
+				{
+					color:#666666;
+					font-size:11px;
+					display:block;
+				}
+				
+
+		#Geral #Content #HomeRight #BoxNewsletter
+		{
+			width:245px;
+			background-color:#5B8EB5;
+			text-align:center;
+			padding-bottom:13px;
+			margin-bottom:30px;
+		}
+		
+			#Geral #Content #HomeRight #BoxNewsletter p
+			{
+				color:#FFFFFF;
+				font-size:11px;
+				padding:8px;
+			}
+			
+			#Geral #Content #HomeRight #BoxNewsletter .form
+			{
+				height:24px;
+				width:223px;
+				background-color:#769DBA;
+				font-size:11px;
+				border:none;
+				color:#FFFFFF;
+			}
+			
+
+			#Geral #Content #HomeRight .Botao
+			{
+				text-align:right;
+				margin-right:10px;
+				
+			}
+
+/*-----------------------------_LEFT*/	
+	#Geral #Content #BoxHome
+	{
+		width:327px;
+		height:auto;
+		min-height: 310px;
+	}
+	
+		#Geral #Content .Titulo
+		{
+			display:block;
+		}
+		
+		#Geral #Content .Imagem
+		{
+			display:block;
+		}
+		
+		#Geral #Content .Texto
+		{
+			font-size:13px;
+			color:#666666 !important;
+		}
+		
+		#Geral #Content .TextoBottom
+		{
+			font-size:13px;
+			color:#666666 !important;
+			padding:10px 18px;
+		}
+		
+		#Geral #Content .labelFormHome
+		{
+			width:50px;
+			font-size:11px;
+			color:#666666;
+			display:inline-table;
+		}
+		
+		#Geral #Content .form
+		{
+			width:50px;
+			background-color:#F1F1F1;
+			height:24px;
+			color:#666666;
+			border:none;
+		}
+		
+		#Geral #Content .Botao
+		{
+			text-align:right;
+			margin-right:23px;
+		}
+	
+	#Geral #Content .left
+	{
+		
+	}
+	
+	#Geral #Content .right
+	{
+		float:right;
+	}
+	
+	#Geral #Content #Divisoria
+	{
+		width:685px;
+		height:60px;
+		background-image:url("../images/div_home.jpg");
+		background-repeat:no-repeat;
+		/*border:1px solid blue;*/
+	}
+
+/*-----------------------------_LEFT INTERNAS*/	
+		#Geral #Content #HomeLeft #ContentInterno
+		{
+			width:685px;
+			/*border:1px solid red;*/
+			height:auto;
+			min-height: 310px;
+		}
+		
+			#Geral #Content #HomeLeft #ContentInterno .DestaqueInterno
+			{
+				display:block;
+				margin-bottom:13px;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #Texto
+			{
+				margin-bottom:30px;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #Texto p
+			{
+				font-size:11px;
+				color:#333333;
+				font-family:Verdana;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno .Titulo
+			{
+				font-size:20px;
+				color:#BF5F2C;
+				text-transform:uppercase;
+			}
+			
+			/*FOTO INTERNA COM LEGENDA*/
+			#Geral #Content #HomeLeft #ContentInterno #BoxFotoInterna
+			{
+				width:243px;
+				height:auto;
+				min-height:;
+				padding-left:32px;
+				background-image:url("../images/bg_box_foto.gif");
+				background-repeat:no-repeat;
+			}
+			
+				#Geral #Content #HomeLeft #ContentInterno #FotoInterna
+				{
+					width:242px;
+					background-color:#F1F1F1;
+					text-align:center;
+					font-family:Verdana;
+					color:#666666;
+					font-size:10px;
+					padding-bottom:6px;
+				}
+				
+		/*-----------------------------_LEFT EVENTOS*/	
+		#Geral #Content #HomeLeft #ContentInterno #Evento
+		{
+			width:689px;
+			border-bottom:1px solid #CCCCCC;
+		}
+		
+			#Geral #Content #HomeLeft #ContentInterno #Evento .Titulo
+			{
+				font-size:11px;
+				color:#666666;
+				font-weight:bold;
+				display:inline-block;
+				width:333px;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #Evento .Data
+			{
+				width:108px;
+				font-size:11px;
+				color:#999999;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #Evento .Icones
+			{
+				
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #DivisoriaEventos
+			{
+				width:692px;
+				height:31px;
+				background-image:url("../images/div_eventos.jpg");
+				background-repeat:no-repeat;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #BoxGaleria
+			{
+				background-color:#F1F4F7;
+				height:auto;
+				min-height:57px;
+				width:170px;
+				padding:7px 0px 0px 7px;
+				margin-bottom:10px;
+				margin-right:10px;
+				display:inline-block;
+				/*border:1px solid red;*/
+				float:left;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #BoxGaleria .Titulo
+			{
+				font-size:11px;
+				color:#CC6633;
+				font-family:Verdana;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #BoxGaleria .Icone
+			{
+				margin-top:8px;
+				display:block;
+			}
+			
+			#Geral #Content #HomeLeft #ContentInterno #BoxGaleria .img
+			{
+				margin-right:8px;
+			}
+		
+/*----------------------------- HEADER INTERNAS*/		
+	#Geral #HeaderInternas
+	{
+		width:100%;
+		height:80px;
+		/*border:1px solid yellow;*/
+		background-image:url("../images/back_titulo.png");
+		background-repeat:no-repeat;
+		background-position-y:7px;
+		text-align:right;
+	}
+	
+		#Geral #HeaderInternas img
+		{
+			
+		}
+		
+/*-----------------------------_FOOTER*/	
+	#Geral #Footer
+	{
+		clear:both;
+		background-image:url("../images/linha_footer.png");
+		background-repeat:no-repeat;
+		background-position:top;
+		padding-top:6px;
+		margin-bottom:20px;
+	}
+	
+	#Geral #Footer #Dados
+	{
+		color:#999999;
+		font-size:12px;
+	}
+	
+		#Geral #Footer #Dados a
+		{
+			color:#999999;
+		}
+		
+	#Geral #Footer #Menu
+	{
+		font-size:12px;
+		float:right;
+		text-align:right;
+		color:#999999;
+	}
+	
+		#Geral #Footer #Menu a
+		{
+			color:#999999;
+		}
+		
+		#Geral #Footer #Menu #logos
+		{
+			margin-top:16px;
+		}
+		
+		#Geral #Footer #Menu .logo
+		{
+			margin-right:19px;
+		}
+
+.zeraMagem
+{
+	margin:0px !important;	
+}
+
+.FotoGrandeGaleria
+{
+	/*border:1px solid #CCCCCC;*/ 
+	margin-top:-100px; 
+	margin-left:40px;
+}

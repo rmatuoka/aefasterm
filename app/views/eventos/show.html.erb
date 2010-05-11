@@ -1,0 +1,35 @@
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/eventos.png", :alt => "Eventos")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<span class="DestaqueInterno"><%= image_tag("dest_eventos_temp.jpg")%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Evento.title%></span><br>
+					
+					<div id="Texto">
+							<p>
+								<%=@Evento.description%>
+							</p>
+					</div>
+					
+					<!-- GALERIA -->
+					<div id="DivisoriaEventos"></div>
+					
+					<%@Galerias.each do |g|%>
+					<div id="BoxGaleria">
+						<%=link_to image_tag(@Servidor + g.image.url("th_home"), :align => "left", :class => "img"), evento_galeria_path(@Evento, g)%>
+						<%=link_to g.title, evento_galeria_path(@Evento,g), :class => "Titulo"%>
+						<span class="Icone"><%= link_to image_tag("bt_fotos.gif"), evento_galeria_path(@Evento,g)%></span>
+					</div>
+					<%end%>
+				</div>
+			</div>
+		</div>
