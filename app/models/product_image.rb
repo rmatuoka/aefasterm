@@ -3,8 +3,8 @@ class ProductImage < ActiveRecord::Base
     
     has_attached_file :image, :styles => { :thumb => "75x75>", :p_medio => "125x125>" },
         :url => "/uploads/:attachment/:id/:basename_:style.:extension",
-        :path => ":rails_root/public/uploads/:attachment/:id/:basename_:style.:extension"
-        
-    validates_presence_of :title
-    validates_presence_of :image
+        :path => ":rails_root/public/uploads/:attachment/:id/:basename_:style.:extension"   
+
+	validates_presence_of :title
+	validates_presence_of :image
 end

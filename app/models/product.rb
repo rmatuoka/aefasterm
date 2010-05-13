@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
     belongs_to :category
-    has_many :product_images
+    has_many :product_images, :dependent => :delete_all
 
 	has_attached_file :pdf,
         :url => "/uploads/:attachment/:id/:basename_:style.:extension",

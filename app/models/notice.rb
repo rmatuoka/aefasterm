@@ -1,5 +1,5 @@
 class Notice < ActiveRecord::Base
-    has_many :notice_images
+    has_many :notice_images, :dependent => :delete_all
     
     validates_presence_of :title
     validates_presence_of :body

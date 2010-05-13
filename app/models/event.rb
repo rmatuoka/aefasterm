@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-    has_many :event_galleries
+    has_many :event_galleries, :dependent => :delete_all
     
     validates_presence_of :title
     validates_presence_of :description
