@@ -97,7 +97,8 @@ body
 		position:absolute !important;
 		float:right;
 		top:76px;
-		left:2000px;
+		left:200px;
+		border:1px solid red;
 	}
 	
 		#Geral #Header #Menu ul li 
