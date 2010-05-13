@@ -1,0 +1,49 @@
+#BoxBusca
+{
+	margin-bottom:10px;
+}
+
+#BoxBusca #Titulo
+{
+	font-size:14px;
+	color:#FFFFFF;
+	font-family:TrebuchetMS, Verdana;
+	height:22px;
+	background-color:#5B8EB5;
+	padding:2px 0px 2px 5px;
+}
+
+#BoxBusca .TituloBusca
+{
+	padding-bottom:4px;
+	border-bottom:1px solid #CCCCCC;
+	margin-bottom:4px;
+}
+
+#BoxBusca .TituloBusca .TituloResultado
+{
+	font-size:12px;
+	color:#666666;
+	font-weight:bold;
+	display:inline-block;
+	width:667px;
+}
+
+	#BoxBusca .TituloBusca .TituloResultado a
+	{
+		color:#666666;
+		font-weight:bold;
+	}
+
+#BoxBusca .TituloBusca .Icone
+{
+	
+}
+
+#BoxBusca .DescricaoBusca
+{
+	color:#999999;
+	font-family:TrebuchetMS, Verdana;
+	font-size:11px;
+	margin-bottom:10px;
+}

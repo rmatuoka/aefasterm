@@ -1,0 +1,34 @@
+<%content_for :head do%>
+<%= stylesheet_link_tag "scroll/scrollable-buttons.css"%>
+<%= stylesheet_link_tag "scroll/scrollable-horizontal.css"%>
+<%= stylesheet_link_tag "scroll/scrollable-navigator.css"%>
+
+<%= stylesheet_link_tag "busca.css"%>
+
+<%end%>
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/busca.png", :alt => "Busca")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<span class="DestaqueInterno"><%= image_tag("dest_busca.jpg")%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Resultados da busca por: </span><br>
+					
+					<div id="BoxBusca">
+						<div id="Titulo">Resultados em <b>NOTICIAS</b></div>
+						<div class="TituloBusca">
+							<span>Titulo</span>
+							<span><%=link_to image_tag("bullet_mais_eventos.gif"), home_path%></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
