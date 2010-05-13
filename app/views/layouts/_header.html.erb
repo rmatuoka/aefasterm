@@ -1,6 +1,12 @@
 		<div id="Header">
 			<div id="Logo"><%=link_to image_tag("logo.gif", :alt => "Fasterm"), home_path%></div>
-			<div id="Busca"></div>
+			<form>
+			<div id="Busca">
+				<form action="/busca" method="get">
+					<input type="text" name="s">
+				</form>
+			</div>
+			</form>
 			<div id="Menu">
 				<ul>
 					<li><%=link_to image_tag("menu/empresa.gif", :alt => "A Fasterm"), empresa_path%></li>

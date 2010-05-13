@@ -35082,3 +35082,479 @@ ActionController::RoutingError (No route matches "/images/titulos/busca.png" wit
   -e:2
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (56.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:11:26) [GET]
+  Parameters: {"s"=>"aquecimento"}
+  [4;36;1mNotice Columns (73.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (156.7ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%aquecimento%' OR notices.body LIKE '%aquecimento%' OR notices.summary LIKE '%aquecimento%'))) [0m
+  [4;36;1mProduct Columns (75.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (148.4ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%aquecimento%' OR products.description LIKE '%aquecimento%'))) [0m
+  [4;36;1mCase Columns (73.5ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (71.7ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%aquecimento%' OR cases.sumary LIKE '%aquecimento%' OR cases.body LIKE '%aquecimento%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (152.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (396.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (89.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (665.5ms)
+  [4;35;1mCategory Columns (81.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (64.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (65.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (5.3ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1643ms (View: 74, DB: 1559) | 200 OK [http://localhost/busca?s=aquecimento]
+  [4;35;1mSQL (58.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (61.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:11:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (69.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (67.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:11:36) [GET]
+  Parameters: {"s"=>"aquecimento"}
+  [4;35;1mNotice Columns (273.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (157.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (((notices.title LIKE '%aquecimento%' OR notices.body LIKE '%aquecimento%' OR notices.summary LIKE '%aquecimento%'))) [0m
+  [4;35;1mProduct Columns (76.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (155.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (((products.title LIKE '%aquecimento%' OR products.description LIKE '%aquecimento%'))) [0m
+  [4;35;1mCase Columns (71.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mCase Load (69.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (((cases.title LIKE '%aquecimento%' OR cases.sumary LIKE '%aquecimento%' OR cases.body LIKE '%aquecimento%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;35;1mNotice Load (148.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Load (372.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (88.0ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (637.3ms)
+  [4;36;1mCategory Columns (68.0ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (70.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (65.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1723ms (View: 67, DB: 1754) | 200 OK [http://localhost/busca?s=aquecimento]
+  [4;36;1mSQL (58.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (71.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:11:44) [GET]
+  Parameters: {"s"=>"teste"}
+  [4;36;1mNotice Columns (71.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (94.8ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%teste%' OR notices.body LIKE '%teste%' OR notices.summary LIKE '%teste%'))) [0m
+  [4;36;1mProduct Columns (86.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (117.5ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%teste%' OR products.description LIKE '%teste%'))) [0m
+  [4;36;1mCase Columns (69.8ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (72.8ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%teste%' OR cases.sumary LIKE '%teste%' OR cases.body LIKE '%teste%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (145.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (402.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (66.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (639.8ms)
+  [4;35;1mCategory Columns (64.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (63.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1355ms (View: 61, DB: 1380) | 200 OK [http://localhost/busca?s=teste]
+  [4;36;1mSQL (53.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:11:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (95.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:12:16) [GET]
+  Parameters: {"s"=>"teste"}
+  [4;36;1mNotice Columns (71.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (80.5ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%teste%' OR notices.body LIKE '%teste%' OR notices.summary LIKE '%teste%'))) [0m
+  [4;36;1mProduct Columns (90.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (120.0ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%teste%' OR products.description LIKE '%teste%'))) [0m
+  [4;36;1mCase Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (71.9ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%teste%' OR cases.sumary LIKE '%teste%' OR cases.body LIKE '%teste%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (149.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (412.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (91.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (678.7ms)
+  [4;35;1mCategory Columns (81.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (64.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (7.1ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1420ms (View: 68, DB: 1462) | 200 OK [http://localhost/busca?s=teste]
+  [4;36;1mSQL (67.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (54.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:12:25) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (108.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (85.2ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (78.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (184.1ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (109.9ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (76.8ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (147.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (401.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (136.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (722.2ms)
+  [4;35;1mCategory Columns (95.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (65.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (66.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (80.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1754ms (View: 80, DB: 1745) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (52.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:12:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (78.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:13:11) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (70.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (78.4ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (76.8ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (187.4ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (76.8ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (78.8ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (149.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (430.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (122.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (730.7ms)
+  [4;35;1mCategory Columns (65.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (64.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (66.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (65.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.9ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1828ms (View: 77, DB: 1665) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (52.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:13:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (53.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:13:39) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (77.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (123.3ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (78.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (176.7ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (69.7ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (70.3ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (163.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (400.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (108.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (698.2ms)
+  [4;35;1mCategory Columns (65.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (62.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (80.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (63.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1647ms (View: 66, DB: 1647) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (68.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:13:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (54.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:14:12) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (75.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (77.0ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (76.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (179.4ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (71.3ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (94.5ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (148.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (420.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (64.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (661.9ms)
+  [4;35;1mCategory Columns (72.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (64.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (90.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (70.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.3ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1615ms (View: 70, DB: 1614) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (53.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (56.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:14:32) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (78.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (115.0ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (76.8ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (179.9ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (125.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (69.8ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (153.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (407.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (96.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (682.1ms)
+  [4;35;1mCategory Columns (66.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (64.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (125.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (70.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1810ms (View: 145, DB: 1743) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (57.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:14:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (58.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:14:42) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (70.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (71.8ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (73.9ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (205.7ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (70.9ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (69.9ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (150.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (366.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (65.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (608.4ms)
+  [4;35;1mCategory Columns (66.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (63.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (98.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (69.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1634ms (View: 70, DB: 1553) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (56.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:14:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (57.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:14:54) [GET]
+  Parameters: {"s"=>"FT"}
+  [4;36;1mNotice Columns (74.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (76.1ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%FT%' OR notices.body LIKE '%FT%' OR notices.summary LIKE '%FT%'))) [0m
+  [4;36;1mProduct Columns (76.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (179.1ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%FT%' OR products.description LIKE '%FT%'))) [0m
+  [4;36;1mCase Columns (70.8ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (71.0ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%FT%' OR cases.sumary LIKE '%FT%' OR cases.body LIKE '%FT%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (147.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (393.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (115.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (684.1ms)
+  [4;35;1mCategory Columns (67.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (71.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCategory Load (74.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;36;1mCategory Load (95.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1624ms (View: 69, DB: 1626) | 200 OK [http://localhost/busca?s=FT]
+  [4;36;1mSQL (57.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (62.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:14:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (53.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (66.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 11:15:02) [GET]
+  Parameters: {"s"=>"teste"}
+  [4;36;1mNotice Columns (74.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (88.3ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%teste%' OR notices.body LIKE '%teste%' OR notices.summary LIKE '%teste%'))) [0m
+  [4;36;1mProduct Columns (78.8ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (122.9ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%teste%' OR products.description LIKE '%teste%'))) [0m
+  [4;36;1mCase Columns (102.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (70.6ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%teste%' OR cases.sumary LIKE '%teste%' OR cases.body LIKE '%teste%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (151.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (398.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (98.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (672.2ms)
+  [4;35;1mCategory Columns (66.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (65.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47busca47index46html46erb at /home/rafael/Eclipse Projetcts/aefasterm/app/views/busca/index.html.erb:34)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1411ms (View: 56, DB: 1439) | 200 OK [http://localhost/busca?s=teste]
+  [4;36;1mSQL (54.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (63.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 11:15:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/busca.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)

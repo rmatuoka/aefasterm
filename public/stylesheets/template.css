@@ -84,6 +84,14 @@ body
 		!important
 	}
 	
+		#Geral #Header #Busca input
+		{
+			margin:13px 0px 0px 15px;
+			width:200px;
+			background:transparent;
+			border:none;
+		}
+	
 	#Geral #Header #Menu
 	{
 		position:absolute !important;
