@@ -10,5 +10,7 @@ class EmpresaController < ApplicationController
       @Imagem = @DynamicPage.image.url
       @Legenda = @DynamicPage.legend
       @Titulo = @DynamicPage.title
+      
+      @Header = Header.first(:conditions => ['dynamic_page_id = ? AND published = 1', 1], :order => 'id DESC')
     end
 end

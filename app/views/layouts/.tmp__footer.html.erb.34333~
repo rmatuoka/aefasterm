@@ -2,8 +2,7 @@
 			<div id="Menu">
 				<%=link_to "Principal", home_path%> | 
 				<%=link_to "Empresa", empresa_path%> | 
-				<%=link_to "Servicos", servicos_path%> |
-				<%=link_to "Cases", cases_path%> |  
+				<%=link_to "Servicos", servicos_path%> | 
 				<%=link_to "Produtos", home_path%> | 
 				<%=link_to "Imprensa", home_path%> | 
 				<%=link_to "Noticias", noticias_path%> | 

@@ -9,5 +9,7 @@ class ServicosController < ApplicationController
       @Imagem = @DynamicPage.image.url
       @Legenda = @DynamicPage.legend
       @Titulo = @DynamicPage.title
+      
+      @Header = Header.first(:conditions => ['dynamic_page_id = ? AND published = 1', 3], :order => 'id DESC')
     end
 end
