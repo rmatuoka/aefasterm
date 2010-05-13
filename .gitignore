@@ -1,3 +1,4 @@
 log/*
 tmp/*
 config/database.yml
+app/views/layouts/_right.html.erb

@@ -47,10 +47,6 @@
 									</div>
 								<%end%>
 							<%end%>
-							
-							<%if @Categorias.blank?%>
-								<p>&nbsp;&nbsp; Não há categorias cadastradas nesta linha.</p>
-							<%end%>
 						</div>
 					</div>
 				</div>
