@@ -1,6 +1,6 @@
 			<%
-			@Servidor = "http://localhost:3002"
-      		#@Servidor = "http://admin.fasterm.com.br"			
+			@Servidor = "localhost"
+      		#@Servidor = "htt//admin.fasterm.com.br"			
 
 			@NoticiaHome = Notice.first(:conditions => ['published = 1'], :order => 'id DESC')  
 			%>

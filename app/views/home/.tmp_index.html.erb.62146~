@@ -1,11 +1,11 @@
 <%content_for :header do%>
 	<div id="Highlight">
-			<div id="Galeria">			
-				<%=image_tag("destaque_home.jpg", :alt => "Destaque Temporário")%>
-				<%=image_tag("destaque_home.jpg", :alt => "Destaque Temporário")%>
-				<%=image_tag("destaque_home.jpg", :alt => "Destaque Temporário")%>
-				<%=image_tag("destaque_home.jpg", :alt => "Destaque Temporário")%>
-				<%=image_tag("destaque_home.jpg", :alt => "Destaque Temporário")%>
+			<div id="Galeria">
+				<%if !@Highlights.blank?%>
+					<%@Highlights.each do |h|%>
+						<%=link_to image_tag(@Servidor + h.image.url()), h.link, :alt => h.title, :title => h.title%>
+					<%end%>
+				<%end%>
 			</div>
 			<div id="navegar">
 				<span class="numbers"></span>
@@ -21,6 +21,7 @@
 					<span class="Titulo"><%=link_to image_tag("tit_cases.gif", :alt => "Cases de Sucesso"), home_path%></span>
 					<span class="Imagem"><%=link_to image_tag("dest_cases.jpg", :alt => "Cases de Sucesso"), home_path%></span>
 					<p class="Texto">
+						Conheça o nosso trabalho. 
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
 					</p>
 				</div>
@@ -42,7 +43,7 @@
 					<div id="update-schedule">
 						<% remote_form_for ScheduleVisit.new, :update => "update-schedule", :loading => "$('loading-schedule').show();", :loaded => "$('loading-schedule').hide();" do |f| %>
 							<p class="TextoBottom">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod:<br>
+								Agende uma visita com um de nossos consultores e conheça as vantagens desta tecnologia.<br>
 								<br>
 								<label>
 									<span class="labelFormHome">Nome:</span>
@@ -67,7 +68,7 @@
 					<div id="update-request">
 						<% remote_form_for RequestCatalog.new, :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| %>
 							<p class="TextoBottom">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod:<br>
+								Quer saber mais sobre a Fasterm? Preencha o formulário abaixo e nós lhe enviaremos nossos catálogos.<br>
 								<br>
 								<label>
 									<span class="labelFormHome">Nome:</span>

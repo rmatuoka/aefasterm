@@ -1,0 +1,24 @@
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/cases.png", :alt => "Cases de Sucesso")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<%if !@Cases.blank?%>
+						<%@Cases.each do |c|%>
+							<div id="Case">
+								<%=link_to image_tag(@Servidor + c.image.url("c_home")), case_path(c)%>
+								<%=link_to c.title, case_path(c)%>
+							</div>
+						<%end%>
+					<%end%>
+				</div>
+			</div>
+		</div>

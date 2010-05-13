@@ -16,9 +16,6 @@
 					
 					<div id="Texto">
 							<p>
-								De: <%=@Evento.date_start.to_date.strftime("%d/%m/%Y")%><br>
-								Até: <%=@Evento.date_end.to_date.strftime("%d/%m/%Y")%><br>
-								<br>
 								<%=@Evento.description%>
 							</p>
 					</div>

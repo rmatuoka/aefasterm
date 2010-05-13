@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
     def index
-      @Noticias = Notice.all
+      @Servidor =  "http://localhost:3002"
+      @Highlights = Highlight.find(:all, :conditions => ['published = 1'])
     end
 end

@@ -433,6 +433,27 @@ body
 			{
 				margin-right:8px;
 			}
+			
+		/*-----------------------------_LEFT CASES*/	
+		#Geral #Content #HomeLeft #ContentInterno #Case
+		{
+			border:1px solid #6699CC;
+			width:327px;
+			height:auto;
+			min-height:158px;
+			background-color:#6699CC;
+			padding-bottom:5px;
+			text-align:right;
+			display:inline-block;
+		}
+		
+			#Geral #Content #HomeLeft #ContentInterno #Case a
+			{
+				font-size:12px;
+				color:#FFFFFF;
+				text-align:right;
+				padding-right:10px;
+			}
 		
 /*----------------------------- HEADER INTERNAS*/		
 	#Geral #HeaderInternas

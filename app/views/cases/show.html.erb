@@ -2,12 +2,12 @@
 <%= stylesheet_link_tag "scroll/scrollable-buttons.css"%>
 <%= stylesheet_link_tag "scroll/scrollable-horizontal.css"%>
 <%= stylesheet_link_tag "scroll/scrollable-navigator.css"%>
-<%end%>
 
+<%end%>
 <%content_for :header do%>
 	<!-- HEADER -->
 	<div id="HeaderInternas">
-		<%= image_tag("titulos/eventos.png", :alt => "Eventos")%>
+		<%= image_tag("titulos/cases.png", :alt => "Cases de Sucesso")%>
 	</div>
 <%end%>
 
@@ -18,7 +18,13 @@
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
 					<span class="DestaqueInterno"><%= image_tag("dest_eventos_temp.jpg")%></span>
-					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Galeria.title%></span><br>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Case.title%></span><br>
+					
+					<div id="Texto">
+							<p>
+								<%=@Case.body%>
+							</p>
+					</div>
 					
 					<%if !@Imagens.blank?%>
 					
@@ -48,11 +54,8 @@
 					      	<%counter = 0%>
 							<div>
 							<%@Imagens.each do |img|%>
-							<%=link_to_remote image_tag(@Servidor + img.image.url("thumb")), 
-													:update => "update_foto", 
-													:method => :get, 
-													:url => image_galeria_path(img),
-													:html => { :href => image_galeria_path(img) } %>
+							<%= lightbox_image_tag(@Servidor + img.image.url("thumb"), @Servidor + img.image.url("c_medio"), {:class=>"images"}, :title => img.title) %>
+
 							<%counter = counter + 1
 								
 								if counter > 3
@@ -82,7 +85,7 @@
 					});
 					</script>
 					
-					<div id="update_foto" class="FotoGrandeGaleria" style="margin-top:-270px;"></div>
+					<div id="update_foto" class="FotoGrandeGaleria"></div>
 					<%end%>
 				</div>
 			</div>

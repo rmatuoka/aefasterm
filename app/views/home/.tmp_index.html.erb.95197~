@@ -18,8 +18,8 @@
 			
 			<div id="HomeLeft">
 				<div id="BoxHome" class="right">
-					<span class="Titulo"><%=link_to image_tag("tit_cases.gif", :alt => "Cases de Sucesso"), cases_path%></span>
-					<span class="Imagem"><%=link_to image_tag("dest_cases.jpg", :alt => "Cases de Sucesso"), cases_path%></span>
+					<span class="Titulo"><%=link_to image_tag("tit_cases.gif", :alt => "Cases de Sucesso"), home_path%></span>
+					<span class="Imagem"><%=link_to image_tag("dest_cases.jpg", :alt => "Cases de Sucesso"), home_path%></span>
 					<p class="Texto">
 						Conheça o nosso trabalho. 
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
@@ -27,8 +27,8 @@
 				</div>
 				
 				<div id="BoxHome">
-					<span class="Titulo"><%=link_to image_tag("tit_sustentabilidade.gif", :alt => "Sustentabilidade"), sustentabilidade_path%></span>
-					<span class="Imagem"><%=link_to image_tag("dest_sustentabilidade.jpg", :alt => "Sustentabilidade"), sustentabilidade_path%></span>
+					<span class="Titulo"><%=link_to image_tag("tit_sustentabilidade.gif", :alt => "Sustentabilidade"), home_path%></span>
+					<span class="Imagem"><%=link_to image_tag("dest_sustentabilidade.jpg", :alt => "Sustentabilidade"), home_path%></span>
 					<p class="Texto">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
 					</p>

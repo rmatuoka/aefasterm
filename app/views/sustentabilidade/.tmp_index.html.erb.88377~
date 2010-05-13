@@ -1,7 +1,7 @@
 <%content_for :header do%>
 	<!-- HEADER -->
 	<div id="HeaderInternas">
-		<%= image_tag("titulos/sustentabilidade.png", :alt => "Sustentabilidade")%>
+		<%= image_tag("titulos/conheca_fasterm.png", :alt => "Conheça a Fasterm")%>
 	</div>
 <%end%>
 

@@ -31663,3 +31663,1893 @@ Rendered layouts/_header (7.5ms)
 Rendered layouts/_footer (4.5ms)
 Completed in 602ms (View: 78, DB: 580) | 200 OK [http://localhost/noticias/3]
 >>>>>>> 0a3dcf36c118f5846d2819a4715da983466de021
+  [4;36;1mSQL (56.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 19:55:43) [GET]
+  [4;36;1mHighlight Load (93.5ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (73.2ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (194.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (73.7ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (277.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (67.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (855.8ms)
+  [4;36;1mScheduleVisit Columns (86.9ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (86.9ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (27.5ms)
+Rendered layouts/_footer (3.9ms)
+Completed in 1689ms (View: 714, DB: 1062) | 200 OK [http://localhost/]
+  [4;36;1mSQL (80.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 19:55:48) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (55.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 19:55:49) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (78.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (59.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#show (for 127.0.0.1 at 2010-05-12 19:58:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mNotice Columns (84.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (219.6ms)[0m   [0mSELECT * FROM `notices` WHERE (`notices`.`id` = 5) [0m
+  [4;36;1mNoticeImage Load (88.3ms)[0m   [0;1mSELECT * FROM `notice_images` WHERE (`notice_images`.notice_id = 5) [0m
+Rendering template within layouts/application
+Rendering noticias/show
+  [4;35;1mNotice Load (190.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Load (283.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (70.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (569.2ms)
+  [4;36;1mNoticeImage Columns (108.3ms)[0m   [0;1mSHOW FIELDS FROM `notice_images`[0m
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1149ms (View: 59, DB: 1183) | 200 OK [http://localhost/noticias/5]
+  [4;35;1mSQL (60.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 19:58:51) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (680.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (438.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#show (for 127.0.0.1 at 2010-05-12 20:01:22) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mNotice Columns (466.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (847.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (`notices`.`id` = 5) [0m
+  [4;35;1mNoticeImage Load (657.1ms)[0m   [0mSELECT * FROM `notice_images` WHERE (`notice_images`.notice_id = 5) [0m
+Rendering template within layouts/application
+Rendering noticias/show
+  [4;36;1mNotice Load (713.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (1984.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (678.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (3402.4ms)
+  [4;35;1mNoticeImage Columns (174.6ms)[0m   [0mSHOW FIELDS FROM `notice_images`[0m
+Rendered layouts/_header (4.6ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 5592ms (View: 50, DB: 6640) | 200 OK [http://localhost/noticias/5]
+  [4;36;1mSQL (109.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (138.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:01:31) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (144.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (72.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:01:32) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (67.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:01:34) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (101.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (286.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#show (for 127.0.0.1 at 2010-05-12 20:02:13) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mNotice Columns (147.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (351.5ms)[0m   [0mSELECT * FROM `notices` WHERE (`notices`.`id` = 6) [0m
+  [4;36;1mNoticeImage Load (134.3ms)[0m   [0;1mSELECT * FROM `notice_images` WHERE (`notice_images`.notice_id = 6) [0m
+Rendering template within layouts/application
+Rendering noticias/show
+  [4;35;1mNotice Load (194.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Load (347.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (96.2ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (664.2ms)
+  [4;36;1mNoticeImage Columns (74.7ms)[0m   [0;1mSHOW FIELDS FROM `notice_images`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 1414ms (View: 49, DB: 1734) | 200 OK [http://localhost/noticias/6]
+  [4;35;1mSQL (77.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (56.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:02:16) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (62.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (61.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 20:02:27) [GET]
+  [4;35;1mHighlight Load (149.8ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (103.2ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (154.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (79.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (343.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (70.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (684.1ms)
+  [4;35;1mScheduleVisit Columns (93.6ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (81.7ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1176ms (View: 90, DB: 1200) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (53.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (70.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-12 20:04:26) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (150.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (71.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (347.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (72.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (748.4ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 776ms (View: 129, DB: 766) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (59.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (81.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:04:30) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mSection Columns (75.9ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (71.9ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;35;1mCategory Load (67.0ms)[0m   [0mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 8) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;36;1mNotice Load (149.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (81.1ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (354.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (64.6ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (686.4ms)
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 966ms (View: 67, DB: 1006) | 200 OK [http://localhost/linhas/8]
+  [4;36;1mSQL (54.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:11:10) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mSection Columns (65.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (64.5ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Load (70.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 8) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (150.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (74.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (357.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (83.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (702.4ms)
+  [4;35;1mCategory Columns (69.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1011ms (View: 57, DB: 1044) | 200 OK [http://localhost/linhas/8]
+  [4;36;1mSQL (60.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (58.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-12 20:11:15) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (65.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (63.7ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (70.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (64.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (117.7ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mProduct Columns (76.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 588ms (View: 101, DB: 577) | 200 OK [http://localhost/linhas/8/categorias/4?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;36;1mSQL (54.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (64.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:11:26) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8", "categoria_id"=>"4"}
+  [4;36;1mSection Columns (84.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (69.4ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (65.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (63.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Columns (97.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (126.7ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 4 AND (`products`.category_id = 4)) [0m
+  [4;36;1mProductImage Load (90.4ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 4) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (148.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (80.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (342.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (71.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (678.5ms)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1343ms (View: 66, DB: 1358) | 200 OK [http://localhost/linhas/8/categorias/4/produtos/4]
+  [4;35;1mSQL (53.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (55.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-12 20:12:24) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (148.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (73.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (341.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (82.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (766.7ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 786ms (View: 135, DB: 754) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (53.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:12:28) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mSection Columns (68.1ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (66.4ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Load (64.9ms)[0m   [0mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;36;1mNotice Load (148.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (79.1ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (343.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (77.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (684.4ms)
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 917ms (View: 51, DB: 956) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (58.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (97.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:16:18) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSection Columns (89.8ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (67.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Load (66.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (162.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (75.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (355.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (66.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (699.5ms)
+  [4;35;1mCategory Columns (71.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1119ms (View: 61, DB: 1109) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (63.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-12 20:16:22) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"5", "linha_id"=>"9"}
+  [4;36;1mSection Columns (71.1ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (83.1ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (66.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (85.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Load (132.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mProduct Columns (74.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 548ms (View: 9, DB: 637) | 200 OK [http://localhost/linhas/9/categorias/5?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;36;1mSQL (69.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:16:25) [GET]
+  Parameters: {"id"=>"5", "linha_id"=>"9", "categoria_id"=>"5"}
+  [4;36;1mSection Columns (77.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (65.9ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (78.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (65.8ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Columns (85.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (122.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 5 AND (`products`.category_id = 5)) [0m
+  [4;36;1mProductImage Load (80.7ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 5) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (170.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (100.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (345.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (67.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (719.8ms)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1356ms (View: 56, DB: 1383) | 200 OK [http://localhost/linhas/9/categorias/5/produtos/5]
+  [4;35;1mSQL (78.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (61.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:31:00) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mSection Columns (67.8ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (99.3ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Load (118.8ms)[0m   [0mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;36;1mNotice Load (197.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (84.8ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (373.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (64.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (757.9ms)
+  [4;36;1mCategory Columns (75.4ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 1159ms (View: 59, DB: 1222) | 200 OK [http://localhost/linhas/9]
+  [4;35;1mSQL (59.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-12 20:31:05) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"5", "linha_id"=>"9"}
+  [4;35;1mSection Columns (77.1ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (89.4ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Columns (70.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (83.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;35;1mProduct Load (182.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;36;1mProduct Columns (78.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 622ms (View: 12, DB: 693) | 200 OK [http://localhost/linhas/9/categorias/5?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;35;1mSQL (55.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:31:08) [GET]
+  Parameters: {"id"=>"6", "linha_id"=>"9", "categoria_id"=>"5"}
+  [4;35;1mSection Columns (68.1ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (67.3ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Columns (67.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (67.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;35;1mProduct Columns (80.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (130.7ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 6 AND (`products`.category_id = 5)) [0m
+  [4;35;1mProductImage Load (82.5ms)[0m   [0mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 6) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;36;1mNotice Load (151.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (73.6ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (347.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (88.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (777.4ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1396ms (View: 137, DB: 1333) | 200 OK [http://localhost/linhas/9/categorias/5/produtos/6]
+  [4;36;1mSQL (78.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:33:26) [GET]
+  Parameters: {"id"=>"6", "linha_id"=>"9", "categoria_id"=>"5"}
+  [4;36;1mSection Columns (67.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (68.3ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (103.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (90.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Columns (103.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (112.4ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 6 AND (`products`.category_id = 5)) [0m
+  [4;36;1mProductImage Load (97.7ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 6) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (176.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (76.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (360.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (70.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (719.8ms)
+  [4;35;1mProductImage Columns (76.1ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 1501ms (View: 62, DB: 1536) | 200 OK [http://localhost/linhas/9/categorias/5/produtos/6]
+  [4;36;1mSQL (57.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-12 20:35:22) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (157.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (77.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (346.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (68.0ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (686.5ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 708ms (View: 54, DB: 763) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (54.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:35:26) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSection Columns (66.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (327.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Load (71.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (151.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (95.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (364.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (65.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (715.1ms)
+  [4;35;1mCategory Columns (65.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1284ms (View: 58, DB: 1318) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (53.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (74.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-12 20:35:30) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"5", "linha_id"=>"9"}
+  [4;36;1mSection Columns (69.1ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (73.5ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (104.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (70.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Load (115.6ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mProduct Columns (78.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 554ms (View: 11, DB: 640) | 200 OK [http://localhost/linhas/9/categorias/5?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;36;1mSQL (80.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (78.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:35:33) [GET]
+  Parameters: {"id"=>"5", "linha_id"=>"9", "categoria_id"=>"5"}
+  [4;36;1mSection Columns (69.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (69.2ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (67.1ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (77.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Columns (90.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (112.7ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 5 AND (`products`.category_id = 5)) [0m
+  [4;36;1mProductImage Load (86.8ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 5) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (151.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (71.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (343.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (65.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (669.3ms)
+  [4;35;1mProductImage Columns (74.3ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (17.8ms)
+Completed in 1460ms (View: 144, DB: 1440) | 200 OK [http://localhost/linhas/9/categorias/5/produtos/5]
+  [4;36;1mSQL (59.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-12 20:35:47) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (161.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (84.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (343.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (66.2ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (689.6ms)
+Rendered layouts/_header (3.7ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 710ms (View: 49, DB: 771) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (68.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:35:50) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mSection Columns (66.4ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (71.3ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Load (97.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 8) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (147.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (103.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (358.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (74.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (818.2ms)
+  [4;35;1mCategory Columns (69.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (5.5ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 1179ms (View: 168, DB: 1110) | 200 OK [http://localhost/linhas/8]
+  [4;36;1mSQL (57.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (67.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 20:37:17) [GET]
+  [4;36;1mHighlight Load (75.7ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (75.7ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (156.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (75.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (347.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (81.0ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (702.0ms)
+  [4;36;1mScheduleVisit Columns (85.6ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (69.7ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (4.5ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1085ms (View: 105, DB: 1093) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (58.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (65.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmpresaController#index (for 127.0.0.1 at 2010-05-12 20:37:25) [GET]
+  [4;36;1mDynamicPage Load (138.4ms)[0m   [0;1mSELECT * FROM `dynamic_pages` WHERE (id = 1 AND published = 1) LIMIT 1[0m
+  [4;35;1mDynamicPage Columns (83.0ms)[0m   [0mSHOW FIELDS FROM `dynamic_pages`[0m
+Rendering template within layouts/application
+Rendering empresa/index
+  [4;36;1mNotice Load (157.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (84.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (358.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (81.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (716.3ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 985ms (View: 59, DB: 1027) | 200 OK [http://localhost/empresa]
+  [4;36;1mSQL (60.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-12 20:37:30) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (190.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (83.7ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (349.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (80.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (742.9ms)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 762ms (View: 53, DB: 820) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (56.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (68.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:37:34) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mSection Columns (77.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (67.5ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Load (65.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 8) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (183.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (107.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (360.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (66.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (752.8ms)
+  [4;35;1mCategory Columns (71.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 1076ms (View: 59, DB: 1123) | 200 OK [http://localhost/linhas/8]
+  [4;36;1mSQL (66.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (69.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-12 20:37:37) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (69.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (65.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (87.9ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (75.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (118.4ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mProduct Columns (76.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 534ms (View: 8, DB: 629) | 200 OK [http://localhost/linhas/8/categorias/4?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;36;1mSQL (56.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:37:41) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8", "categoria_id"=>"4"}
+  [4;36;1mSection Columns (64.5ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (90.5ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (89.8ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (82.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Columns (89.4ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (121.5ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 4 AND (`products`.category_id = 4)) [0m
+  [4;36;1mProductImage Load (80.2ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 4) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (160.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (360.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (63.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (692.9ms)
+  [4;35;1mProductImage Columns (70.6ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1446ms (View: 61, DB: 1458) | 200 OK [http://localhost/linhas/8/categorias/4/produtos/4]
+  [4;36;1mSQL (55.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-12 20:37:47) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (158.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (78.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (342.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (64.6ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (676.1ms)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 697ms (View: 47, DB: 751) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (57.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (59.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-12 20:37:51) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSection Columns (76.4ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (76.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Load (326.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (155.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (74.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (366.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (65.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (699.7ms)
+  [4;35;1mCategory Columns (81.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1306ms (View: 60, DB: 1340) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (64.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-12 20:38:03) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"5", "linha_id"=>"9"}
+  [4;36;1mSection Columns (65.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (66.7ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (72.2ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (77.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Load (119.9ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mProduct Columns (86.3ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 525ms (View: 11, DB: 605) | 200 OK [http://localhost/linhas/9/categorias/5?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;36;1mSQL (55.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (77.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-12 20:38:06) [GET]
+  Parameters: {"id"=>"5", "linha_id"=>"9", "categoria_id"=>"5"}
+  [4;36;1mSection Columns (66.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (81.6ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (95.3ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (84.9ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Columns (95.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (113.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 5 AND (`products`.category_id = 5)) [0m
+  [4;36;1mProductImage Load (80.5ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 5) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (149.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (94.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (343.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (70.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (696.5ms)
+  [4;35;1mProductImage Columns (73.4ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1468ms (View: 64, DB: 1481) | 200 OK [http://localhost/linhas/9/categorias/5/produtos/5]
+  [4;36;1mSQL (68.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-05-12 20:38:17) [GET]
+  [4;36;1mEvent Load (106.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mNotice Load (157.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (76.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (341.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (68.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (678.5ms)
+  [4;35;1mEvent Columns (71.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1013ms (View: 178, DB: 946) | 200 OK [http://localhost/eventos]
+  [4;36;1mSQL (56.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (67.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-05-12 20:39:59) [GET]
+  [4;36;1mEvent Load (88.7ms)[0m   [0;1mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mNotice Load (167.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (84.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (342.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (68.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (703.1ms)
+  [4;35;1mEvent Columns (71.9ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 909ms (View: 73, DB: 946) | 200 OK [http://localhost/eventos]
+  [4;36;1mSQL (57.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (80.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-05-12 20:40:14) [GET]
+  [4;36;1mEvent Load (77.9ms)[0m   [0;1mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mNotice Load (149.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (360.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (62.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (685.8ms)
+  [4;35;1mEvent Columns (71.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_header (4.1ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 878ms (View: 72, DB: 931) | 200 OK [http://localhost/eventos]
+  [4;36;1mSQL (58.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (63.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-05-12 20:41:22) [GET]
+  [4;36;1mEvent Load (78.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mNotice Load (160.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (78.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (363.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (81.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (799.5ms)
+  [4;35;1mEvent Columns (78.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEventGallery Load (77.1ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1097ms (View: 167, DB: 1040) | 200 OK [http://localhost/eventos]
+  [4;35;1mSQL (58.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-05-12 20:41:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (92.3ms)[0m   [0mSELECT * FROM `events` LIMIT 1[0m
+  [4;36;1mEvent Columns (90.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEventGallery Load (77.2ms)[0m   [0mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+  [4;36;1mNotice Load (151.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (74.8ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (342.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (116.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (720.3ms)
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1028ms (View: 61, DB: 1056) | 200 OK [http://localhost/eventos/2]
+  [4;36;1mSQL (52.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-05-12 20:41:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (95.0ms)[0m   [0;1mSELECT * FROM `events` LIMIT 1[0m
+  [4;35;1mEvent Columns (93.7ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEventGallery Load (106.3ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+  [4;35;1mNotice Load (155.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (84.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (344.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (101.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (723.7ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (4.4ms)
+Completed in 1070ms (View: 69, DB: 1086) | 200 OK [http://localhost/eventos/2]
+  [4;35;1mSQL (52.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (85.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-05-12 20:41:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (78.5ms)[0m   [0mSELECT * FROM `events` LIMIT 1[0m
+  [4;36;1mEvent Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEventGallery Load (72.7ms)[0m   [0mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+  [4;36;1mNotice Load (162.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (96.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (348.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (102.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (743.3ms)
+Rendered layouts/_header (4.6ms)
+Rendered layouts/_footer (3.2ms)
+Completed in 1039ms (View: 62, DB: 1092) | 200 OK [http://localhost/eventos/2]
+  [4;36;1mSQL (54.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (80.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 20:48:00) [GET]
+  [4;36;1mHighlight Load (80.2ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (73.1ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (170.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (77.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (349.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (66.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (699.1ms)
+  [4;36;1mScheduleVisit Columns (90.2ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (88.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1165ms (View: 156, DB: 1130) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (70.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmpresaController#index (for 127.0.0.1 at 2010-05-12 20:55:12) [GET]
+  [4;36;1mDynamicPage Load (126.6ms)[0m   [0;1mSELECT * FROM `dynamic_pages` WHERE (id = 1 AND published = 1) LIMIT 1[0m
+  [4;35;1mDynamicPage Columns (92.1ms)[0m   [0mSHOW FIELDS FROM `dynamic_pages`[0m
+Rendering template within layouts/application
+Rendering empresa/index
+  [4;36;1mNotice Load (147.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (77.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (379.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (115.2ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (755.0ms)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1005ms (View: 51, DB: 1062) | 200 OK [http://localhost/empresa]
+  [4;36;1mSQL (61.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:56:04) [GET]
+
+ActionController::RoutingError (No route matches "/cases" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (57.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 20:56:47) [GET]
+Rendering template within layouts/application
+Rendering cases/index
+  [4;36;1mNotice Load (172.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (71.7ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (651.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (67.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (998.6ms)
+
+ActionView::TemplateError (undefined method `image' for nil:NilClass) on line #19 of app/views/cases/index.html.erb:
+16: 				
+17: 					<div id="Texto">
+18: 							<%
+19: 							if !@DynamicPage.image.url.blank?
+20: 							%>
+21: 							<div id="BoxFotoInterna" style="float:right;">
+22: 								<div id="FotoInterna">
+
+    app/views/cases/index.html.erb:19
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (76.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (66.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 20:57:13) [GET]
+Rendering template within layouts/application
+Rendering cases/index
+  [4;36;1mNotice Load (148.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (79.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (348.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (69.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (682.4ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 709ms (View: 57, DB: 789) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (74.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (58.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:57:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (71.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (59.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:01:57) [GET]
+  [4;36;1mCase Load (86.8ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+ERROR: compiling _run_erb_app47views47cases47index46html46erb RAISED compile error
+/home/rafael/Eclipse Projetcts/aefasterm/app/views/cases/index.html.erb:15: syntax error, unexpected '|', expecting kELSE or kWHEN
+; @Cases.each do |case|; @output_buffer.concat "\n\t\...
+                       ^
+/home/rafael/Eclipse Projetcts/aefasterm/app/views/cases/index.html.erb:24: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47cases47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; content_for :header do; @output_buffer.concat "\n\t<!-- HEADER -->\n\t<div id=\"HeaderInternas\">\n\t\t"
+
+
+; @output_buffer.concat(( image_tag("titulos/cases.png", :alt => "Cases de Sucesso")).to_s); @output_buffer.concat "\n\t</div>\n"
+
+; end; @output_buffer.concat "\n\n\t\t<div id=\"Content\" class=\"zeraMagem\">\n\t\t\t"
+
+
+; @output_buffer.concat(( render :file => "layouts/_right.html.erb" ).to_s); @output_buffer.concat "\n\t\t\t\n\t\t\t<div id=\"HomeLeft\">\n\t\t\t\t<!-- CONTEUDO INTERNA -->\n\t\t\t\t<div id=\"ContentInterno\">\n\t\t\t\t\t"
+
+
+
+
+; if !@Cases.blank?; @output_buffer.concat "\n\t\t\t\t\t\t"
+; @Cases.each do |case|; @output_buffer.concat "\n\t\t\t\t\t\t\t<div id=\"Case\">\n\t\t\t\t\t\t\t\t<p>Nome do Case</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t"
+
+
+
+; end; @output_buffer.concat "\n\t\t\t\t\t"
+; end; @output_buffer.concat "\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/rafael/Eclipse Projetcts/aefasterm/app/views/cases/index.html.erb:24:in `compile!'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1326:in `default_render'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/home/rafael/Eclipse Projetcts/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/home/rafael/Eclipse Projetcts/aefasterm/app/views/cases/index.html.erb:15: syntax error, unexpected '|', expecting kELSE or kWHEN
+; @Cases.each do |case|; @output_buffer.concat "\n\t\...
+                       ^
+/home/rafael/Eclipse Projetcts/aefasterm/app/views/cases/index.html.erb:24: syntax error, unexpected kENSURE, expecting $end) on line #15 of app/views/cases/index.html.erb:
+12: 				<!-- CONTEUDO INTERNA -->
+13: 				<div id="ContentInterno">
+14: 					<%if !@Cases.blank?%>
+15: 						<%@Cases.each do |case|%>
+16: 							<div id="Case">
+17: 								<p>Nome do Case</p>
+18: 							</div>
+
+    app/views/cases/index.html.erb:24:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (81.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (68.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:02:39) [GET]
+  [4;35;1mCase Load (91.9ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;36;1mNotice Load (148.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (73.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (392.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (87.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (734.2ms)
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 856ms (View: 53, DB: 942) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (62.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (213.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:04:36) [GET]
+  [4;36;1mCase Load (182.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (150.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (272.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (532.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (81.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (1072.1ms)
+  [4;35;1mCase Columns (316.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1606ms (View: 60, DB: 1810) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (56.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:04:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (52.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (66.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:04:50) [GET]
+  [4;36;1mCase Load (86.8ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (149.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (70.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (343.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (70.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (671.7ms)
+  [4;35;1mCase Columns (87.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 880ms (View: 61, DB: 927) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (60.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:04:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (53.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:05:56) [GET]
+  [4;36;1mCase Load (88.8ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (159.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (357.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (81.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (706.3ms)
+  [4;35;1mCase Columns (89.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 913ms (View: 54, DB: 958) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (110.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (64.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (75.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:06:38) [GET]
+  [4;36;1mCase Load (85.8ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (154.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (81.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (342.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (65.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (680.8ms)
+  [4;35;1mCase Columns (81.5ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 885ms (View: 62, DB: 942) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (61.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:06:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (71.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (69.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:07:34) [GET]
+  [4;36;1mCase Load (105.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (149.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (75.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (368.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (87.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (714.5ms)
+  [4;35;1mCase Columns (91.4ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 940ms (View: 52, DB: 1018) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (57.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:07:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (78.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:08:11) [GET]
+  [4;36;1mCase Load (93.7ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (151.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (388.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (67.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (715.4ms)
+  [4;35;1mCase Columns (97.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.7ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 937ms (View: 55, DB: 1001) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (57.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (64.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:08:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (55.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:09:07) [GET]
+  [4;36;1mCase Load (93.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (154.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (79.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (346.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (65.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (683.4ms)
+  [4;35;1mCase Columns (73.7ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (4.4ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 884ms (View: 57, DB: 925) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (60.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:09:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (52.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:09:55) [GET]
+  [4;36;1mCase Load (85.0ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (152.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (342.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (76.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (680.2ms)
+  [4;35;1mCase Columns (72.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 876ms (View: 63, DB: 906) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (63.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:09:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (59.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (58.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:10:45) [GET]
+  [4;36;1mCase Load (99.5ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (160.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (90.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (344.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (83.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (714.9ms)
+  [4;35;1mCase Columns (96.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "/cases/2":String) on line #17 of app/views/cases/index.html.erb:
+14: 					<%if !@Cases.blank?%>
+15: 						<%@Cases.each do |c|%>
+16: 							<div id="Case">
+17: 								<%=link_to image_tag(@Servidor + c.image.url("c_home"), case_path(c))%>
+18: 								<%=link_to c.title, case_path(c)%>
+19: 							</div>
+20: 						<%end%>
+
+    app/views/cases/index.html.erb:17
+    app/views/cases/index.html.erb:15:in `each'
+    app/views/cases/index.html.erb:15
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (53.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:11:19) [GET]
+  [4;36;1mCase Load (87.7ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (161.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (342.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (71.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (780.2ms)
+  [4;35;1mCase Columns (72.3ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 978ms (View: 160, DB: 915) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (53.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:11:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (64.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (67.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:11:37) [GET]
+  [4;36;1mCase Load (84.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (148.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (88.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (345.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (70.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (766.6ms)
+  [4;35;1mCase Columns (74.9ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 958ms (View: 135, DB: 943) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (70.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (59.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:11:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (59.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (59.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:12:25) [GET]
+  [4;36;1mHighlight Load (82.5ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (80.9ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (169.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (72.4ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (342.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (71.5ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (692.8ms)
+  [4;36;1mScheduleVisit Columns (87.8ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (72.5ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1165ms (View: 175, DB: 1099) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (57.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (73.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:13:00) [GET]
+  [4;36;1mHighlight Load (85.1ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (72.2ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (149.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (73.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (359.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (69.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (689.4ms)
+  [4;36;1mScheduleVisit Columns (70.7ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (73.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1056ms (View: 94, DB: 1083) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (55.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:13:33) [GET]
+  [4;36;1mHighlight Load (82.3ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (79.1ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (149.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (79.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (346.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (75.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (685.9ms)
+  [4;36;1mScheduleVisit Columns (79.9ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (69.0ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1071ms (View: 100, DB: 1070) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (59.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (65.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:13:37) [GET]
+  [4;36;1mCase Load (124.7ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (157.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (84.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (370.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (69.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (722.6ms)
+  [4;35;1mCase Columns (75.3ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 959ms (View: 64, DB: 1007) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (54.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (318.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (71.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for 127.0.0.1 at 2010-05-12 21:13:59) [GET]
+  [4;36;1mCase Load (113.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (154.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (341.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (83.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (686.7ms)
+  [4;35;1mCase Columns (92.3ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 1005ms (View: 138, DB: 1246) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (73.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:14:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (78.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#show (for 127.0.0.1 at 2010-05-12 21:15:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mCase Columns (80.3ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (86.0ms)[0m   [0mSELECT * FROM `cases` WHERE (`cases`.`id` = 3) [0m
+  [4;36;1mCaseImage Load (78.3ms)[0m   [0;1mSELECT * FROM `case_images` WHERE (`case_images`.case_id = 3) [0m
+Rendering template within layouts/application
+Rendering cases/show
+  [4;35;1mNotice Load (148.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (88.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (348.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (67.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (686.6ms)
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 1076ms (View: 143, DB: 1033) | 200 OK [http://localhost/cases/3]
+  [4;35;1mSQL (52.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:15:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (56.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#show (for 127.0.0.1 at 2010-05-12 21:17:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mCase Columns (72.6ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mCase Load (192.8ms)[0m   [0;1mSELECT * FROM `cases` WHERE (`cases`.`id` = 3) [0m
+  [4;35;1mCaseImage Load (84.5ms)[0m   [0mSELECT * FROM `case_images` WHERE (`case_images`.case_id = 3) [0m
+Rendering template within layouts/application
+Rendering cases/show
+  [4;36;1mNotice Load (150.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (91.8ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (351.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (72.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (706.6ms)
+Rendered layouts/_header (4.5ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1097ms (View: 61, DB: 1136) | 200 OK [http://localhost/cases/3]
+  [4;36;1mSQL (52.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (77.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:17:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (68.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#show (for 127.0.0.1 at 2010-05-12 21:20:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mCase Columns (76.8ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (177.4ms)[0m   [0mSELECT * FROM `cases` WHERE (`cases`.`id` = 3) [0m
+  [4;36;1mCaseImage Load (74.6ms)[0m   [0;1mSELECT * FROM `case_images` WHERE (`case_images`.case_id = 3) [0m
+Rendering template within layouts/application
+Rendering cases/show
+  [4;35;1mNotice Load (147.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (76.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (350.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (66.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (676.1ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1044ms (View: 53, DB: 1091) | 200 OK [http://localhost/cases/3]
+  [4;35;1mSQL (54.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (56.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:20:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (58.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (76.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#show (for 127.0.0.1 at 2010-05-12 21:22:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCase Columns (70.6ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mCase Load (187.1ms)[0m   [0;1mSELECT * FROM `cases` WHERE (`cases`.`id` = 2) [0m
+  [4;35;1mCaseImage Load (93.3ms)[0m   [0mSELECT * FROM `case_images` WHERE (`case_images`.case_id = 2) [0m
+Rendering template within layouts/application
+Rendering cases/show
+  [4;36;1mNotice Load (171.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (76.6ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (348.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (67.5ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (700.5ms)
+  [4;36;1mCaseImage Columns (71.0ms)[0m   [0;1mSHOW FIELDS FROM `case_images`[0m
+Rendered layouts/_header (3.3ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1171ms (View: 64, DB: 1221) | 200 OK [http://localhost/cases/2]
+  [4;35;1mSQL (58.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:22:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (65.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (55.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (53.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (58.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:22:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (63.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (55.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:22:24) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (54.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (56.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#show (for 127.0.0.1 at 2010-05-12 21:23:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCase Columns (73.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mCase Load (196.6ms)[0m   [0;1mSELECT * FROM `cases` WHERE (`cases`.`id` = 2) [0m
+  [4;35;1mCaseImage Load (93.4ms)[0m   [0mSELECT * FROM `case_images` WHERE (`case_images`.case_id = 2) [0m
+Rendering template within layouts/application
+Rendering cases/show
+  [4;36;1mNotice Load (154.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (76.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (342.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (68.0ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (676.9ms)
+  [4;36;1mCaseImage Columns (74.5ms)[0m   [0;1mSHOW FIELDS FROM `case_images`[0m
+Rendered layouts/_header (3.8ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1172ms (View: 72, DB: 1189) | 200 OK [http://localhost/cases/2]
+  [4;35;1mSQL (56.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:23:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/titulos/cases.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (55.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (56.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:23:10) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (70.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:23:22) [GET]
+  [4;35;1mHighlight Load (98.4ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (90.4ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (163.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (79.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (369.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (80.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (728.6ms)
+  [4;35;1mScheduleVisit Columns (83.3ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (70.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1133ms (View: 88, DB: 1161) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (53.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (87.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmpresaController#index (for 127.0.0.1 at 2010-05-12 21:23:54) [GET]
+  [4;35;1mDynamicPage Load (118.0ms)[0m   [0mSELECT * FROM `dynamic_pages` WHERE (id = 1 AND published = 1) LIMIT 1[0m
+  [4;36;1mDynamicPage Columns (86.0ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+Rendering template within layouts/application
+Rendering empresa/index
+  [4;35;1mNotice Load (168.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (72.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (347.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (704.2ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 942ms (View: 55, DB: 1010) | 200 OK [http://localhost/empresa]
+  [4;35;1mSQL (56.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:27:33) [GET]
+  [4;35;1mHighlight Load (88.4ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (72.6ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (224.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (107.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (357.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (68.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (796.5ms)
+  [4;35;1mScheduleVisit Columns (202.6ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (340.5ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.9ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1663ms (View: 188, DB: 1588) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (182.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (108.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:27:37) [GET]
+  [4;35;1mHighlight Load (95.2ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (78.7ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (160.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (78.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (347.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (66.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (688.0ms)
+  [4;35;1mScheduleVisit Columns (68.8ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (66.8ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (4.3ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1062ms (View: 90, DB: 1253) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (63.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (57.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SustentabilidadeController#index (for 127.0.0.1 at 2010-05-12 21:28:50) [GET]
+  [4;35;1mDynamicPage Load (129.6ms)[0m   [0mSELECT * FROM `dynamic_pages` WHERE (id = 3 AND published = 1) LIMIT 1[0m
+  [4;36;1mDynamicPage Columns (77.2ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+Rendering template within layouts/application
+Rendering sustentabilidade/index
+  [4;35;1mNotice Load (151.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (78.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (351.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (72.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (691.0ms)
+Rendered layouts/_header (3.6ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 941ms (View: 63, DB: 982) | 200 OK [http://localhost/sustentabilidade]
+  [4;35;1mSQL (60.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (58.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SustentabilidadeController#index (for 127.0.0.1 at 2010-05-12 21:28:56) [GET]
+  [4;35;1mDynamicPage Load (136.1ms)[0m   [0mSELECT * FROM `dynamic_pages` WHERE (id = 3 AND published = 1) LIMIT 1[0m
+  [4;36;1mDynamicPage Columns (71.8ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+Rendering template within layouts/application
+Rendering sustentabilidade/index
+  [4;35;1mNotice Load (161.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (105.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (358.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (75.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (735.2ms)
+Rendered layouts/_header (3.5ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 974ms (View: 50, DB: 1027) | 200 OK [http://localhost/sustentabilidade]
+  [4;35;1mSQL (53.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (72.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SustentabilidadeController#index (for 127.0.0.1 at 2010-05-12 21:29:58) [GET]
+  [4;35;1mDynamicPage Load (185.0ms)[0m   [0mSELECT * FROM `dynamic_pages` WHERE (id = 4 AND published = 1) LIMIT 1[0m
+  [4;36;1mDynamicPage Columns (93.7ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+Rendering template within layouts/application
+Rendering sustentabilidade/index
+  [4;35;1mNotice Load (151.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (350.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (116.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (732.0ms)
+Rendered layouts/_header (3.7ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1043ms (View: 52, DB: 1101) | 200 OK [http://localhost/sustentabilidade]
+  [4;35;1mSQL (55.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-12 21:46:40) [GET]
+  [4;35;1mHighlight Load (106.1ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (88.9ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (153.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (71.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (343.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (67.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (678.0ms)
+  [4;35;1mScheduleVisit Columns (71.6ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (78.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (3.7ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 1092ms (View: 100, DB: 1089) | 200 OK [http://localhost/home]
