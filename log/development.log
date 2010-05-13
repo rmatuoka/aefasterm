@@ -38960,3 +38960,232 @@ Rendered layouts/_right (788.5ms)
 Rendered layouts/_header (1.2ms)
 Rendered layouts/_footer (2.3ms)
 Completed in 1092ms (View: 51, DB: 1128) | 200 OK [http://localhost/cases]
+  [4;36;1mSQL (56.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (48.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuscaController#index (for 127.0.0.1 at 2010-05-13 12:54:44) [GET]
+  Parameters: {"s"=>"méxico"}
+  [4;36;1mNotice Columns (62.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (144.9ms)[0m   [0mSELECT * FROM `notices` WHERE (((notices.title LIKE '%méxico%' OR notices.body LIKE '%méxico%' OR notices.summary LIKE '%méxico%'))) [0m
+  [4;36;1mProduct Columns (65.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (65.7ms)[0m   [0mSELECT * FROM `products` WHERE (((products.title LIKE '%méxico%' OR products.description LIKE '%méxico%'))) [0m
+  [4;36;1mCase Columns (57.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (75.0ms)[0m   [0mSELECT * FROM `cases` WHERE (((cases.title LIKE '%méxico%' OR cases.sumary LIKE '%méxico%' OR cases.body LIKE '%méxico%'))) [0m
+Rendering template within layouts/application
+Rendering busca/index
+  [4;36;1mNotice Load (115.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (248.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (57.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (448.6ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1050ms (View: 43, DB: 998) | 200 OK [http://localhost/busca?s=m%C3%A9xico]
+  [4;35;1mSQL (60.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (77.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#show (for 127.0.0.1 at 2010-05-13 13:13:37) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mNotice Columns (77.4ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (147.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (`notices`.`id` = 6) [0m
+  [4;35;1mNoticeImage Load (79.5ms)[0m   [0mSELECT * FROM `notice_images` WHERE (`notice_images`.notice_id = 6) [0m
+Rendering template within layouts/application
+Rendering noticias/show
+  [4;36;1mNotice Load (144.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Load (385.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (62.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (617.8ms)
+  [4;35;1mNoticeImage Columns (109.1ms)[0m   [0mSHOW FIELDS FROM `notice_images`[0m
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (2.3ms)
+Completed in 1097ms (View: 53, DB: 1144) | 200 OK [http://localhost/noticias/6]
+  [4;36;1mSQL (54.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 13:13:40) [GET]
+
+ActionController::RoutingError (No route matches "/img/global/gradient/h300.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (122.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-05-13 13:13:50) [GET]
+  [4;36;1mEvent Load (82.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mNotice Load (153.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (68.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (379.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (64.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (697.2ms)
+  [4;35;1mEvent Columns (72.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEventGallery Load (78.9ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 967ms (View: 56, DB: 1079) | 200 OK [http://localhost/eventos]
+  [4;35;1mSQL (50.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (51.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-05-13 13:13:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (73.2ms)[0m   [0mSELECT * FROM `events` LIMIT 1[0m
+  [4;36;1mEvent Columns (68.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEventGallery Load (72.9ms)[0m   [0mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+  [4;36;1mNotice Load (143.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (70.7ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (368.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (134.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (749.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1025ms (View: 71, DB: 1034) | 200 OK [http://localhost/eventos/2]
+  [4;36;1mSQL (52.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 127.0.0.1 at 2010-05-13 13:14:02) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (145.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (71.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (386.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (159.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (795.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 820ms (View: 50, DB: 870) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (49.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for 127.0.0.1 at 2010-05-13 13:14:09) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSection Columns (60.3ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (64.3ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Load (60.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (148.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (69.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (364.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (59.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (674.5ms)
+  [4;35;1mCategory Columns (101.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (2.2ms)
+Rendered layouts/_footer (3.4ms)
+Completed in 1001ms (View: 52, DB: 1033) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (58.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for 127.0.0.1 at 2010-05-13 13:14:13) [GET]
+  Parameters: {"authenticity_token"=>"1AZPCBKIz7KuQJ5YZwNt6c72kKk+9zwCC2x0LA+Kqys=", "id"=>"5", "linha_id"=>"9"}
+  [4;36;1mSection Columns (65.0ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (63.2ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (64.4ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (64.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Load (125.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mProduct Columns (74.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 556ms (View: 75, DB: 576) | 200 OK [http://localhost/linhas/9/categorias/5?authenticity_token=1AZPCBKIz7KuQJ5YZwNt6c72kKk%2B9zwCC2x0LA%2BKqys%3D]
+  [4;36;1mSQL (74.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (62.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProdutosController#show (for 127.0.0.1 at 2010-05-13 13:14:16) [GET]
+  Parameters: {"id"=>"6", "linha_id"=>"9", "categoria_id"=>"5"}
+  [4;36;1mSection Columns (76.9ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (67.4ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (62.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (66.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Columns (75.4ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (118.5ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 6 AND (`products`.category_id = 5)) [0m
+  [4;36;1mProductImage Load (74.9ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 6) [0m
+Rendering template within layouts/application
+Rendering produtos/show
+  [4;35;1mNotice Load (165.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (76.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (417.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (78.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (771.0ms)
+  [4;35;1mProductImage Columns (72.2ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 1443ms (View: 57, DB: 1488) | 200 OK [http://localhost/linhas/9/categorias/5/produtos/6]
+  [4;36;1mSQL (160.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (142.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#index (for 127.0.0.1 at 2010-05-13 13:16:36) [GET]
+Redirected to http://localhost:3004/sitecontacts/new
+Completed in 5ms (DB: 303) | 302 Found [http://localhost/sitecontacts]
+  [4;36;1mSQL (61.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (214.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#new (for 127.0.0.1 at 2010-05-13 13:16:37) [GET]
+  [4;36;1mSitecontact Columns (92.0ms)[0m   [0;1mSHOW FIELDS FROM `sitecontacts`[0m
+Rendering template within layouts/application
+Rendering sitecontacts/new
+  [4;35;1mNotice Load (147.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (148.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (381.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (81.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (793.4ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 921ms (View: 60, DB: 1126) | 200 OK [http://localhost/sitecontacts/new]
+  [4;35;1mSQL (54.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-13 13:17:51) [GET]
+  [4;35;1mHighlight Load (72.2ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) [0m
+  [4;36;1mCase Load (184.9ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (68.4ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (162.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (71.4ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (418.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (84.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (848.7ms)
+  [4;36;1mCase Columns (71.0ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (104.5ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (66.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 1494ms (View: 170, DB: 1410) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (53.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#index (for 127.0.0.1 at 2010-05-13 13:17:56) [GET]
+Redirected to http://localhost:3004/sitecontacts/new
+Completed in 5ms (DB: 107) | 302 Found [http://localhost/sitecontacts]
+  [4;35;1mSQL (50.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#new (for 127.0.0.1 at 2010-05-13 13:17:57) [GET]
+  [4;35;1mSitecontact Columns (67.7ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+Rendering template within layouts/application
+Rendering sitecontacts/new
+  [4;36;1mNotice Load (143.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (66.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (509.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (148.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (908.2ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (39.2ms)
+Completed in 1152ms (View: 206, DB: 1039) | 200 OK [http://localhost/sitecontacts/new]
