@@ -1,5 +1,4 @@
 log/*
 tmp/*
 config/database.yml
-app/views/layouts/_right.html.erb
 app/controllers/home_controller.rb
