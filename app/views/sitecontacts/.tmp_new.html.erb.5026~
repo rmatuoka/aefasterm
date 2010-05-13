@@ -11,8 +11,8 @@
 			<div id="HomeLeft">
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
-					<!-- <span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
-					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Contato</span><br> -->
+					<span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Contato</span><br>
 				
 					<div id="Texto">
 							<p>
