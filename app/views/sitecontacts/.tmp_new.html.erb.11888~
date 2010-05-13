@@ -1,7 +1,3 @@
-<%content_for :title do%>
-	Fasterm - Contate-nos
-<%end%
-
 <%content_for :header do%>
 	<!-- HEADER -->
 	<div id="HeaderInternas">

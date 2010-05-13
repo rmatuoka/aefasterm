@@ -1,7 +1,3 @@
-<%content_for :title do%>
-	Fasterm - Aquecedores domésticos e empresariais, painéis solares e acessórios.
-<%end%>
-
 <%content_for :header do%>
 	<div id="Highlight">
 			<div id="Galeria">

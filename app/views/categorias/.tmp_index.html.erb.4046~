@@ -1,7 +1,3 @@
-<%content_for :title do%>
-	Fasterm - Sustentabilidade
-<%end%
-
 <%content_for :header do%>
 	<!-- HEADER -->
 	<div id="HeaderInternas">
@@ -15,7 +11,7 @@
 			<div id="HomeLeft">
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
-					<span class="DestaqueInterno"><%= image_tag(@Servidor + @Header.image.url("header"))%></span>
+					<span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
 					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Titulo%></span><br>
 				
 					<div id="Texto">

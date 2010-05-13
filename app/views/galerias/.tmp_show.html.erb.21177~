@@ -1,17 +1,13 @@
-<%content_for :title do%>
-	Fasterm - Notícias - <%=@Noticia.title%>
-<%end%
-
 <%content_for :head do%>
 <%= stylesheet_link_tag "scroll/scrollable-buttons.css"%>
 <%= stylesheet_link_tag "scroll/scrollable-horizontal.css"%>
 <%= stylesheet_link_tag "scroll/scrollable-navigator.css"%>
-
 <%end%>
+
 <%content_for :header do%>
 	<!-- HEADER -->
 	<div id="HeaderInternas">
-		<%= image_tag("titulos/noticias.png", :alt => "Notícias")%>
+		<%= image_tag("titulos/eventos.png", :alt => "Eventos")%>
 	</div>
 <%end%>
 
@@ -22,13 +18,7 @@
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
 					<span class="DestaqueInterno"><%= image_tag("dest_eventos_temp.jpg")%></span>
-					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Noticia.title%></span><br>
-					
-					<div id="Texto">
-							<p>
-								<%=@Noticia.body%>
-							</p>
-					</div>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Galeria.title%></span><br>
 					
 					<%if !@Imagens.blank?%>
 					
@@ -58,8 +48,7 @@
 					      	<%counter = 0%>
 							<div>
 							<%@Imagens.each do |img|%>
-							<%= lightbox_image_tag(@Servidor + img.image.url("thumb"), @Servidor + img.image.url("n_medio"), {:class=>"images"}, :title => img.title) %>
-
+							<%= lightbox_image_tag(@Servidor + img.image.url("thumb"), @Servidor + img.image.url("e_medio"), {:class=>"images"}, :title => img.title) %>
 							<%counter = counter + 1
 								
 								if counter > 3
@@ -89,7 +78,7 @@
 					});
 					</script>
 					
-					<div id="update_foto" class="FotoGrandeGaleria"></div>
+					<div id="update_foto" class="FotoGrandeGaleria" style="margin-top:-270px;"></div>
 					<%end%>
 				</div>
 			</div>
