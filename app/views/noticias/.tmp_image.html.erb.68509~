@@ -1,3 +1,0 @@
-<p>
-	<%=image_tag(@Servidor + @Imagem.image.url("n_medio"))%>
-</p>

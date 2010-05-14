@@ -40507,3 +40507,18 @@ ActionView::TemplateError (compile error
 Rendered rescues/_trace (199.3ms)
 Rendered rescues/_request_and_response (7.5ms)
 Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for 192.168.1.103 at 2010-05-13 17:56:16) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (4.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (4.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (132.1ms)
+Rendered layouts/_header (10.1ms)
+Rendered layouts/_footer (11.1ms)
+Completed in 217ms (View: 183, DB: 23) | 200 OK [http://192.168.1.103/linhas]
