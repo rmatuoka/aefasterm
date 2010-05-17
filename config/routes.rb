@@ -49,6 +49,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sitecontacts
   map.resources :sustentabilidade, :singular=>:sustentabilidade_item
   map.resources :busca, :singular=>:busca_item
+  map.resources :imprensa, :singular=>:imprensa_item
   
   map.resources :eventos do |eventos|
       eventos.resources :galerias, :has_many => :event_gallery_images

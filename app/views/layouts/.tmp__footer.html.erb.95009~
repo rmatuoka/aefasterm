@@ -5,7 +5,7 @@
 				<%=link_to "Servicos", servicos_path%> |
 				<%=link_to "Cases", cases_path%> |  
 				<%=link_to "Produtos", home_path%> | 
-				<%=link_to "Imprensa", imprensa_path%> | 
+				<%=link_to "Imprensa", home_path%> | 
 				<%=link_to "Noticias", noticias_path%> | 
 				<%=link_to "Eventos", eventos_path%> | 
 				<%=link_to "Agende uma Visita", home_path%> | 
