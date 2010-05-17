@@ -6,7 +6,7 @@ class ImprensaController < ApplicationController
       
       @DynamicPage = DynamicPage.find(:first, :conditions => ['id = 5 AND published = 1'])
       
-      #@Conteudo = @DynamicPage.body
+      @Conteudo = @DynamicPage.body
       @Imagem = @DynamicPage.image.url
       @Legenda = @DynamicPage.legend
       @Titulo = @DynamicPage.title

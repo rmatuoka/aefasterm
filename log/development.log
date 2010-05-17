@@ -41830,3 +41830,18 @@ Rendered layouts/_right (52.1ms)
 Rendered layouts/_header (1.4ms)
 Rendered layouts/_footer (2.6ms)
 Completed in 127ms (View: 76, DB: 31) | 200 OK [http://192.168.1.103/sustentabilidade]
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ImprensaController#index (for 192.168.1.103 at 2010-05-17 12:41:09) [GET]
+  [4;36;1mDynamicPage Load (1.9ms)[0m   [0;1mSELECT * FROM `dynamic_pages` WHERE (id = 5 AND published = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `body' for nil:NilClass):
+  app/controllers/imprensa_controller.rb:9:in `index'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (114.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)

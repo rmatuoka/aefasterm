@@ -15,7 +15,10 @@
 			<div id="HomeLeft">
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
-					<span class="DestaqueInterno"><%= image_tag(@Servidor + @Header.image.url("header"))%></span>
+					<span class="DestaqueInterno">
+						<%if !@Header.image.url.blank?%>
+							<%= image_tag(@Servidor + @Header.image.url("header"))%></span>
+						<%end%>
 					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Titulo%></span><br>
 				
 					<div id="Texto">
@@ -30,7 +33,7 @@
 							</div>
 							<%end%>
 							<p>
-								<%#=@Conteudo%>
+								<%=@Conteudo%>
 							</p>
 					</div>
 					
