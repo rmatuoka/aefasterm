@@ -46363,3 +46363,72 @@ ActionView::TemplateError (undefined method `estado' for #<Sitecontact:0x10312b4
 Rendered rescues/_trace (49.5ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#new (for ::1 at 2010-05-24 15:25:13) [GET]
+  [4;36;1mSitecontact Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `sitecontacts`[0m
+Rendering template within layouts/application
+Rendering sitecontacts/new
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (9.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (120.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 390ms (View: 126, DB: 27) | 200 OK [http://localhost/sitecontacts/new]
+  [4;35;1mSQL (1.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#create (for ::1 at 2010-05-24 15:25:49) [POST]
+  Parameters: {"x"=>"43", "y"=>"15", "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8=", "sitecontact"=>{"city"=>"Atibaia", "company"=>"Agencia Economica", "name"=>"Rafael de Matuoka r Chiocchetti", "phone"=>"11 4411 4707", "message"=>"Olá", "state"=>"SP", "email"=>"rmatuoka@agenciaeconomica.com.br"}}
+  [4;35;1mSitecontact Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSitecontact Create (3.7ms)[0m   [0mINSERT INTO `sitecontacts` (`name`, `company`, `city`, `created_at`, `updated_at`, `phone`, `message`, `email`, `state`) VALUES('Rafael de Matuoka r Chiocchetti', 'Agencia Economica', 'Atibaia', '2010-05-24 18:25:49', '2010-05-24 18:25:49', '11 4411 4707', 'Olá', 'rmatuoka@agenciaeconomica.com.br', 'SP')[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/sitecontacts/1
+Completed in 28ms (DB: 20) | 302 Found [http://localhost/sitecontacts]
+  [4;35;1mSQL (1.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#show (for ::1 at 2010-05-24 15:25:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSitecontact Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSitecontact Load (2.4ms)[0m   [0;1mSELECT * FROM `sitecontacts` WHERE (`sitecontacts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering sitecontacts/show
+  [4;35;1mNotice Load (3.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (113.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 153ms (View: 122, DB: 28) | 200 OK [http://localhost/sitecontacts/1]
+  [4;35;1mSQL (1.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 15:28:08) [GET]
+  [4;35;1mHighlight Load (3.0ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (4.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (41.5ms)
+  [4;36;1mCase Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 145ms (View: 63, DB: 43) | 200 OK [http://localhost/home]
