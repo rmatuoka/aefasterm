@@ -1,5 +1,5 @@
 <%content_for :title do%>
-	Fasterm - Aquecedores domésticos e empresariais, painéis solares e acessórios.
+	Fasterm - Aquecedores dom��sticos e empresariais, pain��is solares e acess��rios.
 <%end%>
 
 <%content_for :header do%>
@@ -46,7 +46,7 @@
 					<div id="update-schedule">
 						<% remote_form_for ScheduleVisit.new, :update => "update-schedule", :loading => "$('loading-schedule').show();", :loaded => "$('loading-schedule').hide();" do |f| %>
 							<p class="TextoBottom">
-								Agende uma visita com um de nossos consultores e conheça as vantagens desta tecnologia.<br>
+								Agende uma visita com um de nossos consultores e conhe��a as vantagens desta tecnologia.<br>
 								<br>
 								<label>
 									<span class="labelFormHome">Nome:</span>
@@ -71,7 +71,7 @@
 					<div id="update-request">
 						<% remote_form_for RequestCatalog.new, :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| %>
 							<p class="TextoBottom">
-								Quer saber mais sobre a Fasterm? Preencha o formulário abaixo e nós lhe enviaremos nossos catálogos.<br>
+								Quer saber mais sobre a Fasterm? Preencha o formul��rio abaixo e n��s lhe enviaremos nossos cat��logos.<br>
 								<br>
 								<label>
 									<span class="labelFormHome">Nome:</span>
@@ -84,7 +84,7 @@
 								</label>
 							</p>
 							<p class="Botao">
-								<%= image_submit_tag "botoes/avancar.gif", :alt => "Avançar" %>
+								<%= image_submit_tag "botoes/avancar.gif", :alt => "Avan��ar" %>
 							</p>
 						<%end%>
 						<center><%= image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' %></center>

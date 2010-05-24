@@ -81,15 +81,19 @@ body
 		background-repeat:no-repeat;
 		/*border:1px solid green;*/
 		top:0px;
+		
 		!important
 	}
 	
 		#Geral #Header #Busca input
 		{
-			margin:13px 0px 0px 15px;
+			margin:10px 0px 0px 18px;
 			width:200px;
 			background:transparent;
 			border:none;
+			font-size:16px;
+			font-family:Tahoma;
+			color:#CCCCCC;
 		}
 	
 	#Geral #Header #Menu
