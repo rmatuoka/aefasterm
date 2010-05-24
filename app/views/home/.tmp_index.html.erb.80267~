@@ -1,0 +1,95 @@
+<%content_for :title do%>
+	Fasterm - Aquecedores domésticos e empresariais, painéis solares e acessórios.
+<%end%>
+
+<%content_for :header do%>
+	<div id="Highlight">
+			<div id="Galeria">
+				<%if !@Highlights.blank?%>
+					<%@Highlights.each do |h|%>
+						<%=link_to image_tag(@Servidor + h.image.url()), h.link, :alt => h.title, :title => h.title%>
+					<%end%>
+				<%end%>
+			</div>
+			<div id="navegar">
+				<span class="numbers"></span>
+			</div>
+		</div>
+<%end%>
+
+		<div id="Content">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<div id="BoxHome" class="right">
+					<span class="Titulo"><%=link_to image_tag("tit_cases.gif", :alt => "Cases de Sucesso"), cases_path%></span>
+					<span class="Imagem"><%=link_to image_tag(@Servidor + @Case.image.url(), :alt => "Cases de Sucesso"), cases_path%></span>
+					<p class="Texto">
+						<%=@Case.sumary%>
+					</p>
+				</div>
+				
+				<div id="BoxHome">
+					<span class="Titulo"><%=link_to image_tag("tit_sustentabilidade.gif", :alt => "Sustentabilidade"), sustentabilidade_path%></span>
+					<span class="Imagem"><%=link_to image_tag("dest_sustentabilidade.jpg", :alt => "Sustentabilidade"), sustentabilidade_path%></span>
+					<p class="Texto">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+					</p>
+				</div>
+			</div>
+			
+			<div id="Divisoria"></div>
+			
+			<div id="HomeLeft">
+				<div id="BoxHome" class="right" style="min-height: 275px;">
+					<span class="Titulo"><%=link_to image_tag("tit_agendeumavisita.gif", :alt => "Sustentabilidade"), home_path%></span>
+					<div id="update-schedule">
+						<% remote_form_for ScheduleVisit.new, :update => "update-schedule", :loading => "$('loading-schedule').show();", :loaded => "$('loading-schedule').hide();" do |f| %>
+							<p class="TextoBottom">
+								Agende uma visita com um de nossos consultores e conheça as vantagens desta tecnologia.<br>
+								<br>
+								<label>
+									<span class="labelFormHome">Nome:</span>
+									<%=f.text_field :name, :class => "form", :style => "width:233px;"%>
+								</label><br><br>
+								
+								<label>
+									<span class="labelFormHome">E-Mail:</span>
+									<%=f.text_field :email, :class => "form", :style => "width:233px;"%>
+								</label>
+							</p>
+							<p class="Botao">
+								<%= image_submit_tag "botoes/avancar.gif", :alt => "Avançar" %>
+							</p>
+						<%end%>
+						<center><%= image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-schedule' %></center>
+					</div>
+				</div>
+				
+				<div id="BoxHome" style="min-height: 275px;">
+					<span class="Titulo"><%=link_to image_tag("tit_catalogos.gif", :alt => "Solicite nosso Catálogo"), home_path%></span>
+					<div id="update-request">
+						<% remote_form_for RequestCatalog.new, :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| %>
+							<p class="TextoBottom">
+								Quer saber mais sobre a Fasterm? Preencha o formulário abaixo e nós lhe enviaremos nossos catálogos.<br>
+								<br>
+								<label>
+									<span class="labelFormHome">Nome:</span>
+									<%=f.text_field :name, :class => "form", :style => "width:233px;"%>
+								</label><br><br>
+								
+								<label>
+									<span class="labelFormHome">E-Mail:</span>
+									<%=f.text_field :email, :class => "form", :style => "width:233px;"%>
+								</label>
+							</p>
+							<p class="Botao">
+								<%= image_submit_tag "botoes/avancar.gif", :alt => "Avançar" %>
+							</p>
+						<%end%>
+						<center><%= image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' %></center>
+					</div>
+					
+				</div>
+			</div>
+		</div>

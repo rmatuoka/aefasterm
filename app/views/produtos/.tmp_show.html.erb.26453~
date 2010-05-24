@@ -33,7 +33,7 @@
 			<div id="HomeLeft">
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
-					<div class="HeaderProdutos"><%= image_tag(@HeaderInterno)%></div>
+					<div class="HeaderProdutos"><%= image_tag("produtos/header_home.png")%></div>
 					<div id="BoxProdutos">
 						<div id="Produtos" style="padding:20px 0px 0px 15px;">
 							<span class="Titulo"><%=@Produto.title%></span>
