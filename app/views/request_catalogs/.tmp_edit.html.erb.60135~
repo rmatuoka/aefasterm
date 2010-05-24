@@ -11,16 +11,6 @@
 		</label><br><br>
 		
 		<label>
-			<span class="labelFormHome">Aplicação:</span>
-			<%=f.select :aplicacao,([["Residência","Residência"],["Hotel/Posada/Motel","Hotel/Posada/Motel"],["Academia/Clubes","Academia/Clubes"],["Industriais","Industriais"],["Outros","Outros"]]), :style => "width:223px;"%>
-		</label><br><br>
-		
-		<label>
-			<span class="labelFormHome" style="width:200px;">Tipo de aquecimento existente:</span><br>
-			<%=f.select :aplicacao,([["Solar","Solar"],["Caldeira a Gás","Caldeira a Gás"],["Caldeira a Lenha","Caldeira a Lenha"],["Caldeira Diesel","Caldeira Diesel"],["Aquecedor de Passagem a Gás ou Elétrico","Aquecedor de Passagem a Gás ou Elétrico"]]), :style => "width:223px;"%>
-		</label><br><br>
-		
-		<label>
 			<span class="labelFormHome">Endere√ßo:</span>
 			<%=f.text_field :address, :class => "form", :style => "width:233px;"%>
 		</label><br><br>

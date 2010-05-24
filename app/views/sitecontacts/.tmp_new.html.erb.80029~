@@ -62,18 +62,6 @@
 						<td><%=f.text_field :company, :class => "form", :style => "width:350px;"%></td>
 						</tr>
 						</label>
-						<label>
-						<tr>
-						<td><p>Cidade</p></td>
-						<td><%=f.text_field :city, :class => "form", :style => "width:350px;"%></td>
-						</tr>
-						</label>
-						<label>
-						<tr>
-						<td><p>Estado</p></td>
-						<td><%=f.text_field :estado, :class => "form", :style => "width:350px;"%></td>
-						</tr>
-						</label>
 						<tr>
 							<td height="5"></td>
 						</tr>

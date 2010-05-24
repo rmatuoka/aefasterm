@@ -43698,3 +43698,2637 @@ Rendered layouts/_right (518.3ms)
 Rendered layouts/_header (0.8ms)
 Rendered layouts/_footer (1.5ms)
 Completed in 1020ms (View: 68, DB: 1039) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (5.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:06:58) [GET]
+  [4;36;1mHighlight Load (2.5ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (6.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (23.1ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (248.1ms)
+  [4;35;1mCase Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (20.1ms)
+Rendered layouts/_footer (16.3ms)
+Completed in 672ms (View: 543, DB: 68) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-24 13:07:03) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for ::1 at 2010-05-24 13:08:08) [GET]
+  [4;36;1mNotice Load (9.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (9.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (36.0ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 112ms (View: 42, DB: 31) | 200 OK [http://localhost/noticias]
+  [4;35;1mSQL (2.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for ::1 at 2010-05-24 13:11:42) [GET]
+  [4;35;1mNotice Load (10.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;36;1mNotice Load (3.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (37.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 84ms (View: 47, DB: 32) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (11.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for ::1 at 2010-05-24 13:12:53) [GET]
+  [4;36;1mNotice Load (10.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;35;1mNotice Load (4.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (12.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (77.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (3.5ms)
+Completed in 131ms (View: 77, DB: 52) | 200 OK [http://localhost/noticias]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for ::1 at 2010-05-24 13:13:01) [GET]
+  [4;35;1mNotice Load (9.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;36;1mNotice Load (6.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (28.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (74.2ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (3.5ms)
+Completed in 194ms (View: 94, DB: 55) | 200 OK [http://localhost/noticias]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NoticiasController#index (for ::1 at 2010-05-24 13:13:07) [GET]
+  [4;36;1mNotice Load (7.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering noticias/index
+  [4;35;1mNotice Load (3.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (36.3ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 149ms (View: 115, DB: 29) | 200 OK [http://localhost/noticias]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-24 13:16:26) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:22:24) [GET]
+  [4;35;1mHighlight Load (2.2ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.6ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (107.5ms)
+  [4;36;1mCase Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 186ms (View: 135, DB: 41) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (1.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:25:52) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"teste", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (3.0ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `created_at`, `updated_at`, `postalcode`, `email`, `state`) VALUES('teste', NULL, NULL, NULL, '2010-05-24 16:25:52', '2010-05-24 16:25:52', NULL, 'teste', NULL)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/8/edit
+Completed in 25ms (DB: 17) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:25:52) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mRequestCatalog Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.4ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 8) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 8) [0m
+Completed in 73ms (View: 61, DB: 9) | 200 OK [http://localhost/request_catalogs/8/edit]
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:26:55) [GET]
+  [4;36;1mHighlight Load (2.2ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.4ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (41.2ms)
+  [4;35;1mCase Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 113ms (View: 65, DB: 41) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:26:58) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"teste", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (1.9ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `created_at`, `updated_at`, `postalcode`, `email`, `state`) VALUES('teste', NULL, NULL, NULL, '2010-05-24 16:26:58', '2010-05-24 16:26:58', NULL, 'teste', NULL)[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/9/edit
+Completed in 25ms (DB: 17) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:26:59) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.4ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 9) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 9) [0m
+
+ActionView::TemplateError (undefined method `aplicacao' for #<RequestCatalog:0x1033f3fc8>) on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Área de Aplicação:</span>
+15: 			<%=f.text_field :aplicacao, :class => "form", :style => "width:233px;"%>
+16: 		</label><br><br>
+17: 		
+18: 		<label>
+
+    app/views/request_catalogs/edit.html.erb:15
+    app/views/request_catalogs/edit.html.erb:1
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (55.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddItensToRequestCatalog (20100524162151)
+  [4;36;1mSQL (41.3ms)[0m   [0;1mALTER TABLE `request_catalogs` ADD `aplicacao` varchar(255)[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mALTER TABLE `request_catalogs` ADD `tipo_existente` varchar(255)[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100524162151')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW FIELDS FROM `case_images`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `case_images`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW KEYS FROM `case_images`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `cases`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW KEYS FROM `cases`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `dynamic_pages`[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mdescribe `dynamic_pages`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW KEYS FROM `dynamic_pages`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW FIELDS FROM `event_galleries`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `event_galleries`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `event_galleries`[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSHOW FIELDS FROM `event_gallery_images`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `event_gallery_images`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW KEYS FROM `event_gallery_images`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mdescribe `events`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSHOW KEYS FROM `events`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `headers`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mdescribe `headers`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW KEYS FROM `headers`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `highlights`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `highlights`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `newsletters`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW KEYS FROM `newsletters`[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSHOW FIELDS FROM `notice_images`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mdescribe `notice_images`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW KEYS FROM `notice_images`[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `notices`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW KEYS FROM `notices`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mdescribe `product_images`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW KEYS FROM `product_images`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mdescribe `request_catalogs`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW KEYS FROM `request_catalogs`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mdescribe `schedule_visits`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW KEYS FROM `schedule_visits`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `sitecontacts`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW KEYS FROM `sitecontacts`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:31:35) [GET]
+  [4;35;1mHighlight Load (2.7ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (41.6ms)
+  [4;36;1mCase Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 115ms (View: 65, DB: 43) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (1.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:31:37) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"teste", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (2.0ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('teste', NULL, NULL, NULL, NULL, '2010-05-24 16:31:38', '2010-05-24 16:31:38', NULL, NULL, 'teste', NULL)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/10/edit
+Completed in 25ms (DB: 17) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:31:38) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.6ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 10) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 10) [0m
+Completed in 24ms (View: 11, DB: 10) | 200 OK [http://localhost/request_catalogs/10/edit]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:32:33) [GET]
+  [4;36;1mHighlight Load (2.5ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.3ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (40.4ms)
+  [4;35;1mCase Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 202ms (View: 155, DB: 40) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:32:38) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.1ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:32:38', '2010-05-24 16:32:38', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/11/edit
+Completed in 27ms (DB: 19) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:32:39) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mRequestCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.4ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 11) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 11) [0m
+Completed in 29ms (View: 17, DB: 10) | 200 OK [http://localhost/request_catalogs/11/edit]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:32:59) [GET]
+  [4;35;1mHighlight Load (2.4ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (7.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (41.9ms)
+  [4;36;1mCase Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 115ms (View: 64, DB: 44) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:33:02) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (3.6ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:33:02', '2010-05-24 16:33:02', NULL, NULL, 'testeaa', NULL)[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/12/edit
+Completed in 35ms (DB: 27) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:33:03) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mRequestCatalog Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.5ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 12) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 12) [0m
+Completed in 30ms (View: 17, DB: 14) | 200 OK [http://localhost/request_catalogs/12/edit]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:33:30) [GET]
+  [4;36;1mHighlight Load (2.1ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.3ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (115.1ms)
+  [4;35;1mCase Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 186ms (View: 135, DB: 43) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:33:32) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.0ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:33:32', '2010-05-24 16:33:32', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (4.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/13/edit
+Completed in 28ms (DB: 21) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:33:33) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mRequestCatalog Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.5ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 13) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 13) [0m
+Completed in 107ms (View: 94, DB: 10) | 200 OK [http://localhost/request_catalogs/13/edit]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:34:53) [GET]
+  [4;35;1mHighlight Load (2.1ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.5ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (42.2ms)
+  [4;36;1mCase Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 115ms (View: 64, DB: 43) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:34:56) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (2.2ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:34:56', '2010-05-24 16:34:56', NULL, NULL, 'testeaa', NULL)[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/14/edit
+Completed in 31ms (DB: 19) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (4.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:34:56) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mRequestCatalog Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.3ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 14) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 14) [0m
+Completed in 31ms (View: 18, DB: 12) | 200 OK [http://localhost/request_catalogs/14/edit]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:35:19) [GET]
+  [4;36;1mHighlight Load (2.1ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.2ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (114.6ms)
+  [4;35;1mCase Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 183ms (View: 136, DB: 41) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:35:22) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.0ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:35:22', '2010-05-24 16:35:22', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/15/edit
+Completed in 28ms (DB: 19) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:35:23) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mRequestCatalog Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.4ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 15) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 15) [0m
+Completed in 31ms (View: 19, DB: 9) | 200 OK [http://localhost/request_catalogs/15/edit]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:35:39) [GET]
+  [4;35;1mHighlight Load (2.3ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.9ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (40.3ms)
+  [4;36;1mCase Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 109ms (View: 61, DB: 41) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:35:42) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (6.9ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (2.7ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:35:42', '2010-05-24 16:35:42', NULL, NULL, 'testeaa', NULL)[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/16/edit
+Completed in 30ms (DB: 22) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (1.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:35:43) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.2ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 16) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 16) [0m
+Completed in 28ms (View: 16, DB: 9) | 200 OK [http://localhost/request_catalogs/16/edit]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:36:19) [GET]
+  [4;36;1mHighlight Load (2.3ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.3ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (39.5ms)
+  [4;35;1mCase Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 180ms (View: 63, DB: 39) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:36:22) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.0ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:36:22', '2010-05-24 16:36:22', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/17/edit
+Completed in 23ms (DB: 17) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:36:23) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.2ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 17) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 17) [0m
+Completed in 30ms (View: 17, DB: 9) | 200 OK [http://localhost/request_catalogs/17/edit]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:36:30) [GET]
+  [4;35;1mHighlight Load (4.8ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (5.0ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (7.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (42.7ms)
+  [4;36;1mCase Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 118ms (View: 66, DB: 45) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (1.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:36:33) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (5.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (2.1ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:36:33', '2010-05-24 16:36:33', NULL, NULL, 'testeaa', NULL)[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/18/edit
+Completed in 26ms (DB: 18) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:36:34) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.3ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 18) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 18) [0m
+Completed in 28ms (View: 16, DB: 9) | 200 OK [http://localhost/request_catalogs/18/edit]
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:36:42) [GET]
+  [4;36;1mHighlight Load (2.7ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (4.8ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (40.6ms)
+  [4;35;1mCase Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 119ms (View: 68, DB: 44) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:36:44) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (5.2ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:36:44', '2010-05-24 16:36:44', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/19/edit
+Completed in 99ms (DB: 23) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:36:45) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mRequestCatalog Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.9ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 19) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 19) [0m
+Completed in 30ms (View: 17, DB: 10) | 200 OK [http://localhost/request_catalogs/19/edit]
+  [4;35;1mSQL (1.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:36:58) [GET]
+  [4;35;1mHighlight Load (2.2ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (5.1ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (7.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (41.3ms)
+  [4;36;1mCase Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 116ms (View: 66, DB: 43) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:37:01) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (4.3ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:37:01', '2010-05-24 16:37:01', NULL, NULL, 'testeaa', NULL)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/20/edit
+Completed in 25ms (DB: 18) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (1.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:37:01) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mRequestCatalog Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.8ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 20) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 20) [0m
+Completed in 30ms (View: 17, DB: 10) | 200 OK [http://localhost/request_catalogs/20/edit]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:37:41) [GET]
+  [4;36;1mHighlight Load (3.0ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.1ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (40.3ms)
+  [4;35;1mCase Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 113ms (View: 64, DB: 44) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:37:43) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.3ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:37:43', '2010-05-24 16:37:43', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/21/edit
+Completed in 24ms (DB: 16) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:37:44) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.4ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 21) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 21) [0m
+Completed in 30ms (View: 18, DB: 9) | 200 OK [http://localhost/request_catalogs/21/edit]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:39:29) [GET]
+  [4;35;1mHighlight Load (2.8ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (39.2ms)
+  [4;36;1mCase Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (1.7ms)
+Completed in 180ms (View: 131, DB: 42) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (1.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:39:32) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (2.1ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:39:32', '2010-05-24 16:39:32', NULL, NULL, 'testeaa', NULL)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/22/edit
+Completed in 25ms (DB: 17) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:39:32) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mRequestCatalog Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (6.9ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 22) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 22) [0m
+
+ActionView::TemplateError (undefined method `select_tag' for #<ActionView::Helpers::FormBuilder:0x103086db8>) on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Aplicação:</span>
+15: 			<%=f.select_tag "textTag",
+16:    				options_for_select(%w{ Red Green Blue Pink Yelow })
+17:      		%> 
+18: 			
+
+    app/views/request_catalogs/edit.html.erb:15
+    app/views/request_catalogs/edit.html.erb:1
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:42:19) [GET]
+  [4;36;1mHighlight Load (2.3ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.3ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (42.5ms)
+  [4;35;1mCase Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 193ms (View: 142, DB: 44) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:42:22) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.2ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:42:22', '2010-05-24 16:42:22', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/23/edit
+Completed in 25ms (DB: 18) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:42:23) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mRequestCatalog Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.3ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 23) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+ERROR: compiling _run_erb_app47views47request_catalogs47edit46html46erb RAISED compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: unterminated string meets end of file
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47request_catalogs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  remote_form_for RequestCatalog.find(params[:id]), :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| ; @output_buffer.concat "\n\t<p class=\"TextoBottom\">\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Nome:</span>\n\t\t\t"
+
+
+
+; @output_buffer.concat((f.text_field :name, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">E-Mail:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :email, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Aplica\215\213o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.select ( :aplicacao, %w { 1 2 3 4 5 6 7 8 9 10 } ) ).to_s); @output_buffer.concat "\n\t\t\t%> \n\t\t\t\n\t\t\t"
+
+
+; @output_buffer.concat((f.text_field :aplicacao, :class => "form", :style => "width:223px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\" style=\"width:200px;\">Tipo de aquecimento existente:</span><br>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :tipo_existente, :class => "form", :style => "margin-left:53px; width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Endere\303\247o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :address, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">N\303\272mero:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :number, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">CEP:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :postalcode, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Cidade:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :city, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Estado:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :state, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+
+
+
+; @output_buffer.concat(( image_submit_tag "botoes/avancar.gif", :alt => "Avan√ßar" ).to_s); @output_buffer.concat "\n\t</p>\n"
+
+; end; @output_buffer.concat "\n<center>"
+; @output_buffer.concat(( image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' ).to_s); @output_buffer.concat "</center>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15:in `compile!'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1326:in `default_render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: unterminated string meets end of file
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $end, expecting ')') on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Aplicação:</span>
+15: 			<%=f.select ( :aplicacao, %w { 1 2 3 4 5 6 7 8 9 10 } ) %>
+16: 			%> 
+17: 			
+18: 			<%=f.text_field :aplicacao, :class => "form", :style => "width:223px;"%>
+
+    app/views/request_catalogs/edit.html.erb:15:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:42:43) [GET]
+  [4;36;1mHighlight Load (4.6ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (5.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (42.5ms)
+  [4;35;1mCase Columns (11.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (1.7ms)
+Completed in 205ms (View: 145, DB: 53) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:42:46) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.7ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:42:46', '2010-05-24 16:42:46', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/24/edit
+Completed in 28ms (DB: 22) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:42:46) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mRequestCatalog Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.5ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 24) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+ERROR: compiling _run_erb_app47views47request_catalogs47edit46html46erb RAISED compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: unterminated string meets end of file
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47request_catalogs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  remote_form_for RequestCatalog.find(params[:id]), :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| ; @output_buffer.concat "\n\t<p class=\"TextoBottom\">\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Nome:</span>\n\t\t\t"
+
+
+
+; @output_buffer.concat((f.text_field :name, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">E-Mail:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :email, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Aplica\215\213o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.select ( :aplicacao, %w { 1 2 3 4 5 6 7 8 9 10 } ) ).to_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+
+; @output_buffer.concat((f.text_field :aplicacao, :class => "form", :style => "width:223px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\" style=\"width:200px;\">Tipo de aquecimento existente:</span><br>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :tipo_existente, :class => "form", :style => "margin-left:53px; width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Endere\303\247o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :address, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">N\303\272mero:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :number, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">CEP:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :postalcode, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Cidade:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :city, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Estado:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :state, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+
+
+
+; @output_buffer.concat(( image_submit_tag "botoes/avancar.gif", :alt => "Avan√ßar" ).to_s); @output_buffer.concat "\n\t</p>\n"
+
+; end; @output_buffer.concat "\n<center>"
+; @output_buffer.concat(( image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' ).to_s); @output_buffer.concat "</center>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15:in `compile!'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1326:in `default_render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: unterminated string meets end of file
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $end, expecting ')') on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Aplicação:</span>
+15: 			<%=f.select ( :aplicacao, %w { 1 2 3 4 5 6 7 8 9 10 } ) %>
+16: 			
+17: 			<%=f.text_field :aplicacao, :class => "form", :style => "width:223px;"%>
+18: 		</label><br><br>
+
+    app/views/request_catalogs/edit.html.erb:15:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (121.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:48:27) [GET]
+  [4;36;1mHighlight Load (2.6ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.6ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (5.4ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (39.4ms)
+  [4;35;1mCase Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 112ms (View: 62, DB: 43) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:48:29) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.1ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:48:29', '2010-05-24 16:48:29', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/25/edit
+Completed in 59ms (DB: 27) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:48:30) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mRequestCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.5ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 25) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+ERROR: compiling _run_erb_app47views47request_catalogs47edit46html46erb RAISED compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected ';', expecting ')'
+...minino","Feminino"]]) ).to_s); @output_buffer.concat "\n\t\t...
+                              ^
+Function body:           def _run_erb_app47views47request_catalogs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  remote_form_for RequestCatalog.find(params[:id]), :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| ; @output_buffer.concat "\n\t<p class=\"TextoBottom\">\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Nome:</span>\n\t\t\t"
+
+
+
+; @output_buffer.concat((f.text_field :name, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">E-Mail:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :email, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Aplica\215\213o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.select (:aplicacao, ([["Masculino","Masculino"],["Feminino","Feminino"]]) ).to_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+
+; @output_buffer.concat((f.text_field :aplicacao, :class => "form", :style => "width:223px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\" style=\"width:200px;\">Tipo de aquecimento existente:</span><br>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :tipo_existente, :class => "form", :style => "margin-left:53px; width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Endere\303\247o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :address, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">N\303\272mero:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :number, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">CEP:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :postalcode, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Cidade:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :city, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Estado:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :state, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+
+
+
+; @output_buffer.concat(( image_submit_tag "botoes/avancar.gif", :alt => "Avan√ßar" ).to_s); @output_buffer.concat "\n\t</p>\n"
+
+; end; @output_buffer.concat "\n<center>"
+; @output_buffer.concat(( image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' ).to_s); @output_buffer.concat "</center>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57:in `compile!'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1326:in `default_render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected ';', expecting ')'
+...minino","Feminino"]]) ).to_s); @output_buffer.concat "\n\t\t...
+                              ^) on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Aplicação:</span>
+15: 			<%=f.select (:aplicacao, ([["Masculino","Masculino"],["Feminino","Feminino"]]) %>
+16: 			
+17: 			<%=f.text_field :aplicacao, :class => "form", :style => "width:223px;"%>
+18: 		</label><br><br>
+
+    app/views/request_catalogs/edit.html.erb:57:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 13:49:50) [GET]
+  [4;36;1mHighlight Load (2.2ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (40.5ms)
+  [4;35;1mCase Columns (9.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 121ms (View: 67, DB: 46) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 13:49:53) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"testeaa"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (8.0ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 16:49:53', '2010-05-24 16:49:53', NULL, NULL, 'testeaa', NULL)[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/26/edit
+Completed in 31ms (DB: 24) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 13:49:54) [GET]
+  Parameters: {"id"=>"26"}
+  [4;36;1mRequestCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.4ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 26) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 26) [0m
+Completed in 30ms (View: 17, DB: 10) | 200 OK [http://localhost/request_catalogs/26/edit]
+  [4;35;1mSQL (4.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-24 13:53:56) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (10.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (43.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 125ms (View: 101, DB: 26) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (1.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for ::1 at 2010-05-24 13:53:58) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mSection Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (1.8ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 10) [0m
+  [4;35;1mCategory Load (1.8ms)[0m   [0mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 10) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;36;1mNotice Load (3.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (43.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 197ms (View: 58, DB: 30) | 200 OK [http://localhost/linhas/10]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 14:01:34) [GET]
+  [4;36;1mHighlight Load (2.4ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.4ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (40.4ms)
+  [4;35;1mCase Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 112ms (View: 65, DB: 41) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 14:01:39) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.2ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 17:01:39', '2010-05-24 17:01:39', NULL, NULL, 'teste', NULL)[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/27/edit
+Completed in 29ms (DB: 20) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 14:01:40) [GET]
+  Parameters: {"id"=>"27"}
+  [4;36;1mRequestCatalog Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.5ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 27) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+ERROR: compiling _run_erb_app47views47request_catalogs47edit46html46erb RAISED compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ld :aplicacao, :class => "form", :style => "width:223px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:223px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected '<'
+...aquecimento existente:</span><br>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ipo_existente, :class => "form", :style => "margin-left:53px...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...s => "form", :style => "margin-left:53px; width:233px;").to_...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...form", :style => "margin-left:53px; width:233px;").to_s); @o...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...> "margin-left:53px; width:233px;").to_s); @output_buffer.co...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined
+...ome\">Endere\303\247o:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ield :address, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined
+...mHome\">N\303\272mero:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...field :number, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined
+...\"labelFormHome\">CEP:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d :postalcode, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined
+...abelFormHome\">Cidade:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t_field :city, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined
+...abelFormHome\">Estado:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._field :state, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p cl...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: unknown regexp option - p
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined
+...oncat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:53: syntax error, unexpected kEND, expecting ')'
+; end; @output_buffer.concat "\n<center>"
+     ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:55: syntax error, unexpected kENSURE, expecting ')'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47request_catalogs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  remote_form_for RequestCatalog.find(params[:id]), :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| ; @output_buffer.concat "\n\t<p class=\"TextoBottom\">\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Nome:</span>\n\t\t\t"
+
+
+
+; @output_buffer.concat((f.text_field :name, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">E-Mail:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :email, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Aplica\215\213o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.select :aplicacao,([["Residência","Residência"],["Hotel/Posada/Motel","Hotel/Posada/Motel"],["Academia/Clubes","Academia/Clubes"],["Industriais","Industriais"],["Outros","Outros"]]),:style => "width:223px;).to_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+
+; @output_buffer.concat((f.text_field :aplicacao, :class => "form", :style => "width:223px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\" style=\"width:200px;\">Tipo de aquecimento existente:</span><br>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :tipo_existente, :class => "form", :style => "margin-left:53px; width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Endere\303\247o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :address, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">N\303\272mero:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :number, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">CEP:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :postalcode, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Cidade:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :city, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Estado:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :state, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+
+
+
+; @output_buffer.concat(( image_submit_tag "botoes/avancar.gif", :alt => "Avan√ßar" ).to_s); @output_buffer.concat "\n\t</p>\n"
+
+; end; @output_buffer.concat "\n<center>"
+; @output_buffer.concat(( image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' ).to_s); @output_buffer.concat "</center>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57:in `compile!'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1326:in `default_render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ld :aplicacao, :class => "form", :style => "width:223px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:223px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected '<'
+...aquecimento existente:</span><br>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ipo_existente, :class => "form", :style => "margin-left:53px...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...s => "form", :style => "margin-left:53px; width:233px;").to_...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...form", :style => "margin-left:53px; width:233px;").to_s); @o...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...> "margin-left:53px; width:233px;").to_s); @output_buffer.co...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined
+...ome\">Endere\303\247o:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ield :address, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined
+...mHome\">N\303\272mero:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...field :number, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined
+...\"labelFormHome\">CEP:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d :postalcode, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined
+...abelFormHome\">Cidade:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t_field :city, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined
+...abelFormHome\">Estado:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._field :state, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p cl...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: unknown regexp option - p
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined
+...oncat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:53: syntax error, unexpected kEND, expecting ')'
+; end; @output_buffer.concat "\n<center>"
+     ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:55: syntax error, unexpected kENSURE, expecting ')'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57: syntax error, unexpected kEND, expecting ')') on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Aplicação:</span>
+15: 			<%=f.select :aplicacao,([["Residência","Residência"],["Hotel/Posada/Motel","Hotel/Posada/Motel"],["Academia/Clubes","Academia/Clubes"],["Industriais","Industriais"],["Outros","Outros"]]),:style => "width:223px;%>
+16: 			
+17: 			<%=f.text_field :aplicacao, :class => "form", :style => "width:223px;"%>
+18: 		</label><br><br>
+
+    app/views/request_catalogs/edit.html.erb:57:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 14:01:57) [GET]
+  [4;36;1mHighlight Load (2.2ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (5.0ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (9.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (114.3ms)
+  [4;35;1mCase Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 185ms (View: 134, DB: 44) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 14:02:00) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.0ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 17:02:00', '2010-05-24 17:02:00', NULL, NULL, 'teste', NULL)[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/28/edit
+Completed in 24ms (DB: 18) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 14:02:01) [GET]
+  Parameters: {"id"=>"28"}
+  [4;36;1mRequestCatalog Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.4ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 28) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+ERROR: compiling _run_erb_app47views47request_catalogs47edit46html46erb RAISED compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ld :aplicacao, :class => "form", :style => "width:223px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:223px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected '<'
+...aquecimento existente:</span><br>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ipo_existente, :class => "form", :style => "margin-left:53px...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...s => "form", :style => "margin-left:53px; width:233px;").to_...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...form", :style => "margin-left:53px; width:233px;").to_s); @o...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...> "margin-left:53px; width:233px;").to_s); @output_buffer.co...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined
+...ome\">Endere\303\247o:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ield :address, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined
+...mHome\">N\303\272mero:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...field :number, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined
+...\"labelFormHome\">CEP:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d :postalcode, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined
+...abelFormHome\">Cidade:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t_field :city, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined
+...abelFormHome\">Estado:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._field :state, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p cl...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: unknown regexp option - p
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined
+...oncat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:53: syntax error, unexpected kEND, expecting ')'
+; end; @output_buffer.concat "\n<center>"
+     ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:55: syntax error, unexpected kENSURE, expecting ')'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47request_catalogs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  remote_form_for RequestCatalog.find(params[:id]), :update => "update-request", :loading => "$('loading-request').show();", :loaded => "$('loading-request').hide();" do |f| ; @output_buffer.concat "\n\t<p class=\"TextoBottom\">\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Nome:</span>\n\t\t\t"
+
+
+
+; @output_buffer.concat((f.text_field :name, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">E-Mail:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :email, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Aplica\215\213o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.select :aplicacao,([["Residência","Residência"],["Hotel/Posada/Motel","Hotel/Posada/Motel"],["Academia/Clubes","Academia/Clubes"],["Industriais","Industriais"],["Outros","Outros"]]), :style => "width:223px;).to_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+
+; @output_buffer.concat((f.text_field :aplicacao, :class => "form", :style => "width:223px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\" style=\"width:200px;\">Tipo de aquecimento existente:</span><br>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :tipo_existente, :class => "form", :style => "margin-left:53px; width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Endere\303\247o:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :address, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">N\303\272mero:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :number, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">CEP:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :postalcode, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Cidade:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :city, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\t\t<label>\n\t\t\t<span class=\"labelFormHome\">Estado:</span>\n\t\t\t"
+
+
+
+
+; @output_buffer.concat((f.text_field :state, :class => "form", :style => "width:233px;").to_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+
+
+
+; @output_buffer.concat(( image_submit_tag "botoes/avancar.gif", :alt => "Avan√ßar" ).to_s); @output_buffer.concat "\n\t</p>\n"
+
+; end; @output_buffer.concat "\n<center>"
+; @output_buffer.concat(( image_tag "ajax-loader_b.gif", :style => 'display:none;', :id => 'loading-request' ).to_s); @output_buffer.concat "</center>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57:in `compile!'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1326:in `default_render'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t\t\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ld :aplicacao, :class => "form", :style => "width:223px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:223px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:17: syntax error, unexpected '<'
+...aquecimento existente:</span><br>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ipo_existente, :class => "form", :style => "margin-left:53px...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...s => "form", :style => "margin-left:53px; width:233px;").to_...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...form", :style => "margin-left:53px; width:233px;").to_s); @o...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...> "margin-left:53px; width:233px;").to_s); @output_buffer.co...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:22: syntax error, unexpected $undefined
+...ome\">Endere\303\247o:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ield :address, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:27: syntax error, unexpected $undefined
+...mHome\">N\303\272mero:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...field :number, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:32: syntax error, unexpected $undefined
+...\"labelFormHome\">CEP:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d :postalcode, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:37: syntax error, unexpected $undefined
+...abelFormHome\">Cidade:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t_field :city, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label><br><br>\n\t\t\n\...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: unknown regexp options - pa
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:42: syntax error, unexpected $undefined
+...abelFormHome\">Estado:</span>\n\t\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._field :state, :class => "form", :style => "width:233px;").t...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss => "form", :style => "width:233px;").to_s); @output_buffe...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\t</label>\n\t</p>\n\t<p cl...
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: unknown regexp option - p
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected $undefined
+...oncat "\n\t\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:47: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...\t</label>\n\t</p>\n\t<p class=\"Botao\">\n\t\t"
+                              ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:53: syntax error, unexpected kEND, expecting ')'
+; end; @output_buffer.concat "\n<center>"
+     ^
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:55: syntax error, unexpected kENSURE, expecting ')'
+/Users/rafaelmatuokachiocchetti/Desktop/aefasterm/app/views/request_catalogs/edit.html.erb:57: syntax error, unexpected kEND, expecting ')') on line #15 of app/views/request_catalogs/edit.html.erb:
+12: 		
+13: 		<label>
+14: 			<span class="labelFormHome">Aplicação:</span>
+15: 			<%=f.select :aplicacao,([["Residência","Residência"],["Hotel/Posada/Motel","Hotel/Posada/Motel"],["Academia/Clubes","Academia/Clubes"],["Industriais","Industriais"],["Outros","Outros"]]), :style => "width:223px;%>
+16: 			
+17: 			<%=f.text_field :aplicacao, :class => "form", :style => "width:223px;"%>
+18: 		</label><br><br>
+
+    app/views/request_catalogs/edit.html.erb:57:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 14:02:26) [GET]
+  [4;36;1mHighlight Load (4.4ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (4.2ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (3.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (115.5ms)
+  [4;35;1mCase Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (5.4ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 189ms (View: 136, DB: 46) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 14:02:28) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;36;1mRequestCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRequestCatalog Create (2.3ms)[0m   [0;1mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 17:02:28', '2010-05-24 17:02:28', NULL, NULL, 'teste', NULL)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/29/edit
+Completed in 26ms (DB: 18) | 302 Found [http://localhost/request_catalogs]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 14:02:29) [GET]
+  Parameters: {"id"=>"29"}
+  [4;36;1mRequestCatalog Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mRequestCatalog Load (2.2ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 29) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 29) [0m
+Completed in 110ms (View: 18, DB: 9) | 200 OK [http://localhost/request_catalogs/29/edit]
+  [4;35;1mSQL (2.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-24 14:04:24) [GET]
+  [4;35;1mHighlight Load (2.4ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (4.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (4.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (9.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (52.9ms)
+  [4;36;1mCase Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 127ms (View: 72, DB: 47) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (2.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#create (for ::1 at 2010-05-24 14:04:27) [POST]
+  Parameters: {"request_catalog"=>{"name"=>"testeaaa", "email"=>"teste"}, "authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8="}
+  [4;35;1mRequestCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRequestCatalog Create (2.1ms)[0m   [0mINSERT INTO `request_catalogs` (`name`, `address`, `number`, `city`, `aplicacao`, `created_at`, `updated_at`, `postalcode`, `tipo_existente`, `email`, `state`) VALUES('testeaaa', NULL, NULL, NULL, NULL, '2010-05-24 17:04:27', '2010-05-24 17:04:27', NULL, NULL, 'teste', NULL)[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/request_catalogs/30/edit
+Completed in 36ms (DB: 24) | 302 Found [http://localhost/request_catalogs]
+  [4;35;1mSQL (2.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RequestCatalogsController#edit (for ::1 at 2010-05-24 14:04:28) [GET]
+  Parameters: {"id"=>"30"}
+  [4;35;1mRequestCatalog Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;36;1mRequestCatalog Load (2.5ms)[0m   [0;1mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 30) [0m
+Rendering template within layouts/blank
+Rendering request_catalogs/edit
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `request_catalogs` WHERE (`request_catalogs`.`id` = 30) [0m
+Completed in 32ms (View: 18, DB: 10) | 200 OK [http://localhost/request_catalogs/30/edit]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddItensToRequestCatalog (20100524162151)
+Migrating to AddItensToSitecontact (20100524181334)
+  [4;36;1mSQL (14.5ms)[0m   [0;1mALTER TABLE `sitecontacts` ADD `city` varchar(255)[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mALTER TABLE `sitecontacts` ADD `state` varchar(255)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100524181334')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `case_images`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `case_images`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW KEYS FROM `case_images`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `cases`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW KEYS FROM `cases`[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSHOW FIELDS FROM `dynamic_pages`[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mdescribe `dynamic_pages`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW KEYS FROM `dynamic_pages`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `event_galleries`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mdescribe `event_galleries`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW KEYS FROM `event_galleries`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW FIELDS FROM `event_gallery_images`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mdescribe `event_gallery_images`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW KEYS FROM `event_gallery_images`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mdescribe `events`[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mSHOW KEYS FROM `events`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `headers`[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mdescribe `headers`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW KEYS FROM `headers`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mSQL (4.1ms)[0m   [0mdescribe `highlights`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `highlights`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `newsletters`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW KEYS FROM `newsletters`[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mSHOW FIELDS FROM `notice_images`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mdescribe `notice_images`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW KEYS FROM `notice_images`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mdescribe `notices`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW KEYS FROM `notices`[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `product_images`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `product_images`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `request_catalogs`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW KEYS FROM `request_catalogs`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `schedule_visits`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW KEYS FROM `schedule_visits`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `sitecontacts`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW KEYS FROM `sitecontacts`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#index (for ::1 at 2010-05-24 15:22:00) [GET]
+Redirected to http://localhost:3000/sitecontacts/new
+Completed in 3ms (DB: 3) | 302 Found [http://localhost/sitecontacts]
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#new (for ::1 at 2010-05-24 15:22:01) [GET]
+  [4;36;1mSitecontact Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `sitecontacts`[0m
+Rendering template within layouts/application
+Rendering sitecontacts/new
+  [4;35;1mNotice Load (3.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (43.1ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (2.7ms)
+Completed in 144ms (View: 113, DB: 26) | 200 OK [http://localhost/sitecontacts/new]
