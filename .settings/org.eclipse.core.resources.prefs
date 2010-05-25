@@ -1,3 +1,4 @@
-#Mon May 24 17:25:29 BRT 2010
+#Tue May 25 02:33:34 BRT 2010
 eclipse.preferences.version=1
 encoding//app/views/home/index.html.erb=UTF-8
+encoding//app/views/layouts/_header.html.erb=ISO-8859-1
