@@ -1,6 +1,5 @@
-<!-- NOVO -->
 <%content_for :title do%>
-	Fasterm - Produtos - <%=@Section.title%>
+	Fasterm - Produtos - <%=@Produto.title%>
 <%end%>
 
 <%content_for :head do%>
@@ -36,20 +35,18 @@
 				<div id="ContentInterno">
 					<div class="HeaderProdutos"><%= image_tag(@HeaderInterno)%></div>
 					<div id="BoxProdutos">
-					<%@Produtos.each do |p|%>
-					<div id-"GeralProdutos">
 						<div id="Produtos" style="padding:20px 0px 0px 15px;">
-							<span class="Titulo"><%=p.title%></span>
+							<span class="Titulo"><%=@Produto.title%></span>
 							<br>
-							<span class="Corpo"><%=p.description%></span>	
+							<span class="Corpo"><%=@Produto.description%></span>	
 							<br>
 							<!-- pdf e video -->
-							<%if !p.pdf.blank?%>
-								<%=link_to image_tag("botoes/pdf.gif"), @Servidor + p.pdf.url%>
+							<%if !@Produto.pdf.blank?%>
+								<%=link_to image_tag("botoes/pdf.gif"), @Servidor + @Produto.pdf.url%>
 							<%end%>
 
-							<%if p.video.blank?%>
-								<%=link_to image_tag("botoes/video.gif"), @Servidor + p.video.url%>
+							<%if @Produto.video.blank?%>
+								<%=link_to image_tag("botoes/video.gif"), @Servidor + @Produto.video.url%>
 							<%end%>
 						</div>
 						
@@ -59,7 +56,6 @@
 							<center>
 								<%
 								counter = 0
-								@Imagens = p.product_images.find(:all)
 								@Imagens.each do |img|%>
 									<%if counter == 1%>
 										<br><br>
@@ -75,22 +71,7 @@
 								
 							</center>
 						</div>
-						</div>
-						<%end%>
 					</div>
 				</div>
 			</div>
 		</div>
-
-<!-- <%@Produtos.each do |p|%>
-<div class="Produto">
-	<span class="Nome"><%=link_to p.title, linha_categoria_produto_path(@Section, @Categoria, p)%></span>
-	<span class="Icone"><%=link_to image_tag("bullet_mais_eventos.gif"), linha_categoria_produto_path(@Section, @Categoria, p)%></span>
-</div>
-<%end%>
-
-<%if @Produtos.blank?%>
-<div class="Produto">
-	<span class="Nome"><a>Não há produtos cadastrados nesta categoria</a></span>
-</div>
-<%end%> -->

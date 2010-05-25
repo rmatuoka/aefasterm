@@ -47493,3 +47493,683 @@ Rendered layouts/_right (542.0ms)
 Rendered layouts/_header (0.9ms)
 Rendered layouts/_footer (1.8ms)
 Completed in 584ms (View: 154, DB: 548) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (53.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:21:17) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (102.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (212.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (55.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (455.3ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (2.7ms)
+Completed in 483ms (View: 48, DB: 539) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (55.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (51.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:21:22) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;35;1mSection Columns (57.4ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (57.8ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;35;1mCategory Columns (55.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (59.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;35;1mProduct Load (73.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;36;1mProduct Columns (63.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 485ms (View: 18, DB: 475) | 200 OK [http://localhost/linhas/8/categorias/4]
+  [4;35;1mSQL (51.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:22:42) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;35;1mSection Columns (53.7ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (55.5ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;35;1mCategory Columns (58.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (57.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;35;1mProduct Load (73.8ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/categorias/show.html.erb:
+1: <!-- NOVO -->
+2: <%content_for :title do%>
+3: 	Fasterm - Produtos - <%=@Produto.title%>
+4: <%end%>
+5: 
+6: <%content_for :head do%>
+
+    app/views/categorias/show.html.erb:3
+    app/views/categorias/show.html.erb:2
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (129.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (52.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:23:31) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (56.0ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (59.1ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (59.2ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (61.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (75.7ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/categorias/show.html.erb:
+1: <!-- NOVO -->
+2: <%content_for :title do%>
+3: 	Fasterm - Produtos - <%=@Produto.title%>
+4: <%end%>
+5: 
+6: <%content_for :head do%>
+
+    app/views/categorias/show.html.erb:3
+    app/views/categorias/show.html.erb:2
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (129.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (51.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:24:02) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;35;1mSection Columns (55.5ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (58.2ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;35;1mCategory Columns (60.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (63.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;35;1mProduct Load (73.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/categorias/show.html.erb:
+1: <!-- NOVO -->
+2: <%content_for :title do%>
+3: 	Fasterm - Produtos - <%=@Produto.title%>
+4: <%end%>
+5: 
+6: <%content_for :head do%>
+
+    app/views/categorias/show.html.erb:3
+    app/views/categorias/show.html.erb:2
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (129.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (53.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:24:04) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (56.8ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (59.3ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (59.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (64.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (76.7ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/categorias/show.html.erb:
+1: <!-- NOVO -->
+2: <%content_for :title do%>
+3: 	Fasterm - Produtos - <%=@Produto.title%>
+4: <%end%>
+5: 
+6: <%content_for :head do%>
+
+    app/views/categorias/show.html.erb:3
+    app/views/categorias/show.html.erb:2
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (50.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:24:05) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;35;1mSection Columns (54.9ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (57.4ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;35;1mCategory Columns (56.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (61.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;35;1mProduct Load (74.7ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/categorias/show.html.erb:
+1: <!-- NOVO -->
+2: <%content_for :title do%>
+3: 	Fasterm - Produtos - <%=@Produto.title%>
+4: <%end%>
+5: 
+6: <%content_for :head do%>
+
+    app/views/categorias/show.html.erb:3
+    app/views/categorias/show.html.erb:2
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:24:07) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (54.1ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (62.3ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (57.3ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (57.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (79.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/categorias/show.html.erb:
+1: <!-- NOVO -->
+2: <%content_for :title do%>
+3: 	Fasterm - Produtos - <%=@Produto.title%>
+4: <%end%>
+5: 
+6: <%content_for :head do%>
+
+    app/views/categorias/show.html.erb:3
+    app/views/categorias/show.html.erb:2
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (51.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:24:52) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;35;1mSection Columns (60.1ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (57.3ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;35;1mCategory Columns (55.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (57.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;35;1mProduct Load (75.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;36;1mNotice Load (95.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (61.7ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (206.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (56.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (444.8ms)
+
+ActionView::TemplateError (can't convert nil into String) on line #37 of app/views/categorias/show.html.erb:
+34: 			<div id="HomeLeft">
+35: 				<!-- CONTEUDO INTERNA -->
+36: 				<div id="ContentInterno">
+37: 					<div class="HeaderProdutos"><%= image_tag(@HeaderInterno)%></div>
+38: 					<div id="BoxProdutos">
+39: 					<%@Produtos.each do |p|%>
+40: 					<div id-"GeralProdutos">
+
+    app/views/categorias/show.html.erb:37
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (61.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:25:46) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (56.4ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (57.1ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (58.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (58.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (76.5ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mNotice Load (100.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (66.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (205.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (54.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (449.7ms)
+  [4;35;1mProduct Columns (60.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (undefined method `pdf' for nil:NilClass) on line #47 of app/views/categorias/show.html.erb:
+44: 							<span class="Corpo"><%=p.description%></span>	
+45: 							<br>
+46: 							<!-- pdf e video -->
+47: 							<%if !@Produto.pdf.blank?%>
+48: 								<%=link_to image_tag("botoes/pdf.gif"), @Servidor + p.pdf.url%>
+49: 							<%end%>
+50: 
+
+    app/views/categorias/show.html.erb:47
+    app/views/categorias/show.html.erb:39:in `each'
+    app/views/categorias/show.html.erb:39
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (52.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:26:08) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (53.8ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (57.4ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (57.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (64.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (75.3ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mNotice Load (98.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (62.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (203.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (443.1ms)
+  [4;35;1mProduct Columns (73.3ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (undefined method `video' for nil:NilClass) on line #51 of app/views/categorias/show.html.erb:
+48: 								<%=link_to image_tag("botoes/pdf.gif"), @Servidor + p.pdf.url%>
+49: 							<%end%>
+50: 
+51: 							<%if @Produto.video.blank?%>
+52: 								<%=link_to image_tag("botoes/video.gif"), @Servidor + p.video.url%>
+53: 							<%end%>
+54: 						</div>
+
+    app/views/categorias/show.html.erb:51
+    app/views/categorias/show.html.erb:39:in `each'
+    app/views/categorias/show.html.erb:39
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (119.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:26:28) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (53.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (56.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (83.5ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (58.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (72.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mNotice Load (95.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (59.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (204.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (63.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (446.0ms)
+  [4;35;1mProduct Columns (60.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #62 of app/views/categorias/show.html.erb:
+59: 							<center>
+60: 								<%
+61: 								counter = 0
+62: 								@Imagens.each do |img|%>
+63: 									<%if counter == 1%>
+64: 										<br><br>
+65: 									<%end%>
+
+    app/views/categorias/show.html.erb:62
+    app/views/categorias/show.html.erb:39:in `each'
+    app/views/categorias/show.html.erb:39
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (127.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (56.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:27:11) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (56.6ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (58.5ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (56.2ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (58.6ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (74.6ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/blank
+Rendering categorias/show
+  [4;35;1mNotice Load (94.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (208.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (62.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (449.1ms)
+  [4;35;1mProduct Columns (62.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProductImage Load (63.4ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 4) [0m
+  [4;35;1mProductImage Columns (61.1ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Completed in 993ms (View: 57, DB: 1027) | 200 OK [http://localhost/linhas/8/categorias/4]
+  [4;36;1mSQL (55.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:27:26) [GET]
+  Parameters: {"id"=>"4", "linha_id"=>"8"}
+  [4;36;1mSection Columns (55.3ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (58.9ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 8) [0m
+  [4;36;1mCategory Columns (53.3ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (58.6ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4 AND (`categories`.section_id = 8)) [0m
+  [4;36;1mProduct Load (73.4ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 4 AND (published = 1)) [0m
+Rendering template within layouts/application
+Rendering categorias/show
+  [4;35;1mNotice Load (93.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (206.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (55.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (440.2ms)
+  [4;35;1mProduct Columns (60.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProductImage Load (61.5ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 4) [0m
+  [4;35;1mProductImage Columns (64.6ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 967ms (View: 48, DB: 1009) | 200 OK [http://localhost/linhas/8/categorias/4]
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:27:33) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (97.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (61.6ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (206.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (55.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (444.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 459ms (View: 34, DB: 525) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (52.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for ::1 at 2010-05-25 01:27:36) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSection Columns (54.3ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (57.1ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Load (55.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (94.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (207.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (54.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (439.8ms)
+  [4;35;1mCategory Columns (58.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 784ms (View: 128, DB: 749) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (52.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for ::1 at 2010-05-25 01:27:39) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSection Columns (54.2ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (56.3ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Load (68.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (94.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (78.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (228.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (55.2ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (479.9ms)
+  [4;35;1mCategory Columns (54.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 738ms (View: 37, DB: 798) | 200 OK [http://localhost/linhas/9]
+  [4;36;1mSQL (55.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:27:44) [GET]
+  Parameters: {"authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8=", "id"=>"5", "linha_id"=>"9"}
+  [4;36;1mSection Columns (54.3ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (58.0ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;36;1mCategory Columns (57.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mCategory Load (58.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;36;1mProduct Load (80.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/application
+Rendering categorias/show
+  [4;35;1mNotice Load (104.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (60.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (208.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (451.4ms)
+  [4;35;1mProduct Columns (61.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProductImage Load (64.3ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 5) [0m
+  [4;35;1mProductImage Columns (62.4ms)[0m   [0mSHOW FIELDS FROM `product_images`[0m
+  [4;36;1mProductImage Load (69.0ms)[0m   [0;1mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 6) [0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 1066ms (View: 51, DB: 1108) | 200 OK [http://localhost/linhas/9/categorias/5?authenticity_token=huZ4%2F%2BN5oXZdXpwMK5yr7Nmrc5SBEQ%2BCSyMTnNgdwL8%3D]
+  [4;35;1mSQL (54.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:29:45) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (94.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (65.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (209.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (55.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (528.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 547ms (View: 119, DB: 533) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (51.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (51.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for ::1 at 2010-05-25 01:29:46) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mSection Columns (57.0ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (70.6ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Load (58.4ms)[0m   [0mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;36;1mNotice Load (96.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (61.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (208.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (60.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (448.6ms)
+  [4;36;1mCategory Columns (55.6ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 715ms (View: 36, DB: 770) | 200 OK [http://localhost/linhas/9]
+  [4;35;1mSQL (51.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for ::1 at 2010-05-25 01:30:02) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mSection Columns (55.3ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (58.2ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Load (56.7ms)[0m   [0mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 9) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;36;1mNotice Load (96.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (68.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (206.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (55.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (450.4ms)
+  [4;36;1mCategory Columns (59.2ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.9ms)
+Completed in 795ms (View: 39, DB: 760) | 200 OK [http://localhost/linhas/9]
+  [4;35;1mSQL (58.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:30:04) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (95.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (204.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (66.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (450.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 464ms (View: 33, DB: 537) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (50.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:30:06) [GET]
+  Parameters: {"id"=>"5", "linha_id"=>"9"}
+  [4;35;1mSection Columns (55.3ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (59.0ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 9) [0m
+  [4;35;1mCategory Columns (60.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (60.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5 AND (`categories`.section_id = 9)) [0m
+  [4;35;1mProduct Load (85.1ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.category_id = 5 AND (published = 1)) [0m
+Rendering template within layouts/application
+Rendering categorias/show
+  [4;36;1mNotice Load (93.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (63.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (206.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (58.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (446.0ms)
+  [4;36;1mProduct Columns (64.4ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProductImage Load (66.6ms)[0m   [0mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 5) [0m
+  [4;36;1mProductImage Columns (62.3ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mProductImage Load (67.9ms)[0m   [0mSELECT * FROM `product_images` WHERE (`product_images`.product_id = 6) [0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 1150ms (View: 53, DB: 1107) | 200 OK [http://localhost/linhas/9/categorias/5]
+  [4;36;1mSQL (51.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (49.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:30:15) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;36;1mNotice Load (95.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (61.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (203.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (59.2ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (441.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 455ms (View: 32, DB: 520) | 200 OK [http://localhost/linhas]
+  [4;36;1mSQL (52.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (54.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#show (for ::1 at 2010-05-25 01:30:18) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSection Columns (53.4ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSection Load (56.8ms)[0m   [0mSELECT * FROM `sections` WHERE (`sections`.`id` = 10) [0m
+  [4;36;1mCategory Load (54.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (published = 1) AND (`categories`.section_id = 10) [0m
+Rendering template within layouts/application
+Rendering linhas/show
+  [4;35;1mNotice Load (97.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (59.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (208.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (57.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (446.1ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 634ms (View: 32, DB: 695) | 200 OK [http://localhost/linhas/10]
+  [4;35;1mSQL (62.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:30:51) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (95.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (62.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (205.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (442.3ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 460ms (View: 37, DB: 536) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (52.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (56.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:30:53) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (94.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (86.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (214.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (53.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (471.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 485ms (View: 32, DB: 558) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (56.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 01:30:54) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (96.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (206.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (54.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (513.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 527ms (View: 106, DB: 525) | 200 OK [http://localhost/linhas]
+  [4;35;1mSQL (52.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#show (for ::1 at 2010-05-25 01:30:57) [GET]
+  Parameters: {"id"=>"6", "linha_id"=>"10"}
+  [4;35;1mSection Columns (54.2ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+  [4;36;1mSection Load (56.5ms)[0m   [0;1mSELECT * FROM `sections` WHERE (`sections`.`id` = 10) [0m
+  [4;35;1mCategory Columns (54.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (56.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 6 AND (`categories`.section_id = 10)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=6 AND (`categories`.section_id = 10)):
+  app/controllers/categorias_controller.rb:6:in `show'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (112.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
