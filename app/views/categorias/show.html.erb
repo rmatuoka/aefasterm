@@ -37,8 +37,8 @@
 					<div class="HeaderProdutos"><%= image_tag(@HeaderInterno)%></div>
 					<div id="BoxProdutos">
 					<%@Produtos.each do |p|%>
-					<div id-"GeralProdutos" style="height:auto; min-height:200px; clear:right;">
-						<div id="Produtos" style="padding:20px 0px 0px 15px;">
+					<div id-"GeralProdutos" style="height:auto; min-height:200px; position:relative; border:1px solid red;">
+						<div id="Produtos" style="padding:20px 0px 0px 15px; border:1px solid red;">
 							<span class="Titulo"><%=p.title%></span>
 							<br>
 							<span class="Corpo"><%=p.description%></span>	
@@ -56,7 +56,7 @@
 						</div>
 						
 						
-						<div id="Categorias">
+						<div id="Categorias" style="border:1px solid red;">
 							<!-- IMAGENS -->
 							<center>
 								<%
