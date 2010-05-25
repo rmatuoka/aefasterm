@@ -35,9 +35,9 @@
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
 					<div class="HeaderProdutos"><%= image_tag(@HeaderInterno)%></div>
-					<div id="BoxProdutos" style="height:auto; min-height:200px;">
+					<div id="BoxProdutos">
 					<%@Produtos.each do |p|%>
-					<div id-"GeralProdutos">
+					<div id-"GeralProdutos" style="height:auto; min-height:200px;">
 						<div id="Produtos" style="padding:20px 0px 0px 15px;">
 							<span class="Titulo"><%=p.title%></span>
 							<br>
