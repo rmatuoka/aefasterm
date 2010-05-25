@@ -51,8 +51,6 @@
 							<%if p.video.blank?%>
 								<%=link_to image_tag("botoes/video.gif"), @Servidor + p.video.url%>
 							<%end%>
-							
-							<%=lightbox_image_tag("/images/botoes/grafico.gif", "/images/produtos/grafico.png", :title => "Ver o grafico comparativo")%>
 						</div>
 						
 						
