@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: aecms
+  database: fasterm
   pool: 5
   username: ae
   password: aeti

@@ -1,7 +1,11 @@
+<%content_for :title do%>
+	Fasterm - Quem Somos?
+<%end%>
+
 <%content_for :header do%>
 	<!-- HEADER -->
 	<div id="HeaderInternas">
-		<%= image_tag("titulos/sustentabilidade.png", :alt => "Sustentabilidade")%>
+		<%= image_tag("titulos/conheca_fasterm.png", :alt => "Conheça a Fasterm")%>
 	</div>
 <%end%>
 
@@ -11,12 +15,15 @@
 			<div id="HomeLeft">
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
-					<span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
+					<span class="DestaqueInterno">
+						<%if !@Header.image.url.blank?%>
+							<%= image_tag(@Servidor + @Header.image.url("header"))%></span>
+						<%end%>
 					<span class="Titulo"><%= image_tag("bullet_mais.png")%> <%=@Titulo%></span><br>
 				
 					<div id="Texto">
 							<%
-							if !@DynamicPage.image.url.blank?
+							if !@Legenda.blank?
 							%>
 							<div id="BoxFotoInterna" style="float:right;">
 								<div id="FotoInterna">

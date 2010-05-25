@@ -46823,3 +46823,491 @@ Rendered layouts/_right (40.4ms)
 Rendered layouts/_header (0.8ms)
 Rendered layouts/_footer (1.5ms)
 Completed in 113ms (View: 63, DB: 43) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (112.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (69.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-25 00:02:32) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-25 00:42:13) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (49.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-25 00:42:14) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (57.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:43:55) [GET]
+  [4;36;1mHighlight Load (68.7ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (117.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (62.3ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (113.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (60.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (204.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (527.2ms)
+  [4;35;1mCase Columns (57.8ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (58.6ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (59.7ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 1312ms (View: 401, DB: 968) | 200 OK [http://localhost/]
+  [4;36;1mSQL (56.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-25 00:45:35) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (49.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-25 00:45:42) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:47:11) [GET]
+  [4;36;1mHighlight Load (66.5ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (118.2ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (62.9ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (95.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (58.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (203.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.1ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (510.6ms)
+  [4;35;1mCase Columns (64.9ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (58.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (57.6ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+
+ActionView::TemplateError (undefined local variable or method `sessios_path' for #<ActionView::Base:0x102f0bc68>) on line #15 of app/views/layouts/_header.html.erb:
+12: 					<li class=""><%=link_to "serviÃ§os", servicos_path%></li>
+13: 					<li class=""><%=link_to "cases", cases_path%></li>
+14: 					<li class=""><%=link_to "eventos", eventos_path%></li>
+15: 					<li class=""><%=link_to "‡Área restrita", sessios_path%></li>
+16: 					<li class=""><%=link_to "contato", sitecontacts_path%></li>
+17: 				</ul>
+18: 			</div>
+
+    app/views/layouts/_header.html.erb:15
+    app/views/layouts/application.html.erb:49
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (53.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (52.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:47:13) [GET]
+  [4;36;1mHighlight Load (67.6ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (123.1ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (63.2ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (99.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (63.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (208.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.7ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (452.9ms)
+  [4;35;1mCase Columns (60.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (60.4ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (60.2ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+
+ActionView::TemplateError (undefined local variable or method `sessios_path' for #<ActionView::Base:0x103593928>) on line #15 of app/views/layouts/_header.html.erb:
+12: 					<li class=""><%=link_to "serviÃ§os", servicos_path%></li>
+13: 					<li class=""><%=link_to "cases", cases_path%></li>
+14: 					<li class=""><%=link_to "eventos", eventos_path%></li>
+15: 					<li class=""><%=link_to "‡Área restrita", sessios_path%></li>
+16: 					<li class=""><%=link_to "contato", sitecontacts_path%></li>
+17: 				</ul>
+18: 			</div>
+
+    app/views/layouts/_header.html.erb:15
+    app/views/layouts/application.html.erb:49
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (128.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (54.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:47:15) [GET]
+  [4;36;1mHighlight Load (65.9ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (117.2ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (65.0ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (99.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (64.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (209.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (452.3ms)
+  [4;35;1mCase Columns (60.8ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (59.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (59.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+
+ActionView::TemplateError (undefined local variable or method `sessios_path' for #<ActionView::Base:0x103286000>) on line #15 of app/views/layouts/_header.html.erb:
+12: 					<li class=""><%=link_to "serviÃ§os", servicos_path%></li>
+13: 					<li class=""><%=link_to "cases", cases_path%></li>
+14: 					<li class=""><%=link_to "eventos", eventos_path%></li>
+15: 					<li class=""><%=link_to "‡Área restrita", sessios_path%></li>
+16: 					<li class=""><%=link_to "contato", sitecontacts_path%></li>
+17: 				</ul>
+18: 			</div>
+
+    app/views/layouts/_header.html.erb:15
+    app/views/layouts/application.html.erb:49
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (55.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:47:30) [GET]
+  [4;36;1mHighlight Load (65.7ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (126.2ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (60.7ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (95.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (57.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (212.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (59.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (448.8ms)
+  [4;35;1mCase Columns (61.5ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (58.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (59.0ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+
+ActionView::TemplateError (undefined local variable or method `sessions_path' for #<ActionView::Base:0x102fad220>) on line #15 of app/views/layouts/_header.html.erb:
+12: 					<li class=""><%=link_to "serviÃ§os", servicos_path%></li>
+13: 					<li class=""><%=link_to "cases", cases_path%></li>
+14: 					<li class=""><%=link_to "eventos", eventos_path%></li>
+15: 					<li class=""><%=link_to "‡Área restrita", sessions_path%></li>
+16: 					<li class=""><%=link_to "contato", sitecontacts_path%></li>
+17: 				</ul>
+18: 			</div>
+
+    app/views/layouts/_header.html.erb:15
+    app/views/layouts/application.html.erb:49
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (51.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:47:33) [GET]
+  [4;36;1mHighlight Load (67.5ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (114.9ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (64.1ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (99.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (60.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (203.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (445.4ms)
+  [4;35;1mCase Columns (57.8ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (61.2ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (65.3ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+
+ActionView::TemplateError (undefined local variable or method `sessions_path' for #<ActionView::Base:0x102e6e1c0>) on line #15 of app/views/layouts/_header.html.erb:
+12: 					<li class=""><%=link_to "serviÃ§os", servicos_path%></li>
+13: 					<li class=""><%=link_to "cases", cases_path%></li>
+14: 					<li class=""><%=link_to "eventos", eventos_path%></li>
+15: 					<li class=""><%=link_to "‡Área restrita", sessions_path%></li>
+16: 					<li class=""><%=link_to "contato", sitecontacts_path%></li>
+17: 				</ul>
+18: 			</div>
+
+    app/views/layouts/_header.html.erb:15
+    app/views/layouts/application.html.erb:49
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (54.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:47:51) [GET]
+  [4;36;1mHighlight Load (69.1ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (118.6ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (66.0ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (97.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (63.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (208.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (517.9ms)
+  [4;35;1mCase Columns (59.7ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (65.6ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (65.1ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (2.8ms)
+Completed in 1018ms (View: 137, DB: 976) | 200 OK [http://localhost/]
+  [4;36;1mSQL (59.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:47:55) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/admin.erb in view path app/views):
+  app/controllers/sessions_controller.rb:4:in `index'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (51.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:48:11) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 11ms (View: 8, DB: 105) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (71.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:49:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mNotice Load (93.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (63.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (207.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (63.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (452.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 468ms (View: 37, DB: 550) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (54.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:50:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mNotice Load (94.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (61.1ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (208.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (56.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (444.0ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 462ms (View: 37, DB: 526) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (56.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:51:31) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mNotice Load (95.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (63.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (212.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (58.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (454.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 471ms (View: 38, DB: 544) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (53.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:51:53) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mNotice Load (97.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (59.8ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (208.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (55.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (518.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 536ms (View: 111, DB: 531) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (53.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for ::1 at 2010-05-25 00:51:57) [POST]
+  Parameters: {"authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8=", "email"=>"", "senha"=>""}
+
+NameError (uninitialized constant SessionsController::Partner):
+  app/controllers/sessions_controller.rb:8:in `create'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:52:35) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mNotice Load (96.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (59.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (207.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (54.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (441.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 454ms (View: 34, DB: 529) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (54.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for ::1 at 2010-05-25 00:52:39) [POST]
+  Parameters: {"authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8=", "email"=>"", "senha"=>""}
+  [4;36;1mPartner Load (0.0ms)[0m   [0;1mMysql::Error: Table 'aecms.partners' doesn't exist: SELECT * FROM `partners` WHERE (email = '' AND password = '') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'aecms.partners' doesn't exist: SELECT * FROM `partners` WHERE (email = '' AND password = '')  LIMIT 1):
+  app/controllers/sessions_controller.rb:8:in `create'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (119.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (52.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:53:15) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mNotice Load (93.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (63.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (202.1ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (56.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (437.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 451ms (View: 32, DB: 523) | 200 OK [http://localhost/sessions]
+  [4;35;1mSQL (50.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for ::1 at 2010-05-25 00:53:16) [POST]
+  Parameters: {"authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8=", "email"=>"", "senha"=>""}
+  [4;35;1mPartner Load (0.0ms)[0m   [0mMysql::Error: Table 'aecms.partners' doesn't exist: SELECT * FROM `partners` WHERE (email = '' AND password = '') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'aecms.partners' doesn't exist: SELECT * FROM `partners` WHERE (email = '' AND password = '')  LIMIT 1):
+  app/controllers/sessions_controller.rb:8:in `create'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (54.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for ::1 at 2010-05-25 00:53:28) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mNotice Load (96.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (61.4ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (216.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (57.0ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (455.1ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 467ms (View: 33, DB: 538) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (53.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for ::1 at 2010-05-25 00:53:31) [POST]
+  Parameters: {"authenticity_token"=>"huZ4/+N5oXZdXpwMK5yr7Nmrc5SBEQ+CSyMTnNgdwL8=", "email"=>"", "senha"=>""}
+  [4;36;1mPartner Load (0.0ms)[0m   [0;1mMysql::Error: Table 'aecms.partners' doesn't exist: SELECT * FROM `partners` WHERE (email = '' AND password = '') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'aecms.partners' doesn't exist: SELECT * FROM `partners` WHERE (email = '' AND password = '')  LIMIT 1):
+  app/controllers/sessions_controller.rb:8:in `create'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (53.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (51.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-25 00:55:21) [GET]
+  [4;35;1mHighlight Load (70.3ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (117.6ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (62.6ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (95.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (63.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (211.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (57.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (450.8ms)
+  [4;36;1mCase Columns (64.5ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (60.8ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (60.4ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 939ms (View: 63, DB: 969) | 200 OK [http://localhost/home]
