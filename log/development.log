@@ -48338,3 +48338,18 @@ Rendered layouts/_right (447.7ms)
 Rendered layouts/_header (0.8ms)
 Rendered layouts/_footer (1.7ms)
 Completed in 990ms (View: 59, DB: 1011) | 200 OK [http://localhost/linhas/8/categorias/4]
+  [4;35;1mSQL (50.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinhasController#index (for ::1 at 2010-05-25 02:23:18) [GET]
+Rendering template within layouts/application
+Rendering linhas/index
+  [4;35;1mNotice Load (97.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (206.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (53.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (445.0ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 459ms (View: 36, DB: 524) | 200 OK [http://localhost/linhas]
