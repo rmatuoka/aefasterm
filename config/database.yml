@@ -42,8 +42,9 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: aefasterm_production
+  database: fasterm1
   pool: 5
-  username: root
-  password: 
+  username: fasterm1
+  password: fast010
   socket: /var/run/mysqld/mysqld.sock
+  host: 187.45.196.173
