@@ -38,7 +38,8 @@
 					<div id="BoxProdutos">
 					<%@Produtos.each do |p|%>
 					<div id-"GeralProdutos" style="position:relative; height:auto; min-height:200px; border:1px solid red;">
-						<div id="Produtos" style="padding:20px 0px 0px 15px; border:1px solid red;height:auto; min-height:200px; position:relative;">
+						<div id="Produtos" style="padding:20px 0px 0px 15px; border:1px solid red;">
+							<p>
 							<span class="Titulo"><%=p.title%></span>
 							<br>
 							<p class="Corpo"><%=p.description%></p>	
@@ -53,8 +54,9 @@
 							<%end%>
 							
 							<%=lightbox_image_tag("/images/botoes/grafico.gif", "/images/produtos/grafico.png", :title => "Ver o grafico comparativo")%>
+							</p>
 						</div>
-						
+							
 						
 						<div id="Categorias" style="border:1px solid red;">
 							<!-- IMAGENS -->
