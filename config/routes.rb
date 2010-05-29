@@ -61,9 +61,10 @@ ActionController::Routing::Routes.draw do |map|
       noticias.resources :imagens
   end
   
-  map.resources :cases do |cases|
-      cases.resources :imagens
-  end
+  map.resources :cases, :has_many => :imagens, :member => { :categoria => :get } 
+  #map.resources :cases do |cases|
+  #    cases.resources :imagens
+  #end
   
   map.resources :linhas do |linhas|
     linhas.resources :categorias do |categorias|

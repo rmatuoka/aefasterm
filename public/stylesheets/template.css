@@ -124,7 +124,8 @@ body
 		
 		#Geral #Header #Menu ul li:hover
 		{
-			border-bottom:3px solid #6699CC;
+			/*border-bottom:3px solid #6699CC;*/
+			border-bottom:3px solid #ea3a00;
 		}
 /*-----------------------------_DESTAQUE*/		
 	#Geral #Highlight

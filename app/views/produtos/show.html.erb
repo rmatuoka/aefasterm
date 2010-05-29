@@ -41,6 +41,7 @@
 							<span class="Corpo"><%=@Produto.description%></span>	
 							<br>
 							<!-- pdf e video -->
+							
 							<%if !@Produto.pdf.blank?%>
 								<%=link_to image_tag("botoes/pdf.gif"), @Servidor + @Produto.pdf.url%>
 							<%end%>

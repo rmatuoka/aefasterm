@@ -14,7 +14,18 @@
 			
 			<div id="HomeLeft">
 				<!-- CONTEUDO INTERNA -->
-				<div id="ContentInterno">
+				<div id="ContentInterno">		
+					<%if !@Cases.blank?%>
+						<%@Cases.each do |c|%>
+						<div id="Evento">
+							<span class="Titulo" style="width:550px;"><%=link_to c.category, categoria_case_path(c.category), :class =>"Titulo" %></span>
+							<span class="Icones">
+								<%=link_to image_tag("bullet_mais_eventos.gif"), case_path(c)%>
+							</span>	
+						</div>
+						<%end%>
+					<%end%>
+					<!-- 
 					<%if !@Cases.blank?%>
 						<%@Cases.each do |c|%>
 							<div id="Case">
@@ -23,6 +34,7 @@
 							</div>
 						<%end%>
 					<%end%>
+					-->
 				</div>
 			</div>
 		</div>

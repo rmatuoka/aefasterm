@@ -46,11 +46,12 @@
 							<p class="Corpo"><%=p.description%></p>	
 							<br>
 							<!-- pdf e video -->
-							<%if !p.pdf.blank?%>
+
+							<%if !p.pdf.exists?%>
 								<%=link_to image_tag("botoes/pdf.gif"), @Servidor + p.pdf.url%>
 							<%end%>
 
-							<%if p.video.blank?%>
+							<%if !p.video.exists?%>
 								<%=link_to image_tag("botoes/video.gif"), @Servidor + p.video.url%>
 							<%end%>
 							
