@@ -1,0 +1,19 @@
+		<div id="Header">
+			<div id="Logo"><%=link_to image_tag("logo.gif", :alt => "Fasterm"), home_path%></div>
+			<form id="form" action="/busca" method="get">
+			<div id="Busca">
+					<input type="text" value="Busca" name="s">
+			</div>
+			</form>
+			<div id="Menu">
+				<ul>
+					<li class=""><%=link_to "empresa", empresa_path%></li>
+					<li class=""><%=link_to "produtos", linhas_path%></li>
+					<li class=""><%=link_to "serviços", servicos_path%></li>
+					<li class=""><%=link_to "cases", cases_path%></li>
+					<li class=""><%=link_to "eventos", eventos_path%></li>
+					<li class=""><%=link_to "area restrita", sessions_path%></li>
+					<li class=""><%=link_to "contato", sitecontacts_path%></li>
+				</ul>
+			</div>
+		</div>

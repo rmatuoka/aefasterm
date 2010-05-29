@@ -1,0 +1,30 @@
+		<div id="Footer">
+			<div id="Menu">
+				<%=link_to "Principal", home_path%> | 
+				<%=link_to "Empresa", empresa_path%> | 
+				<%=link_to "Servicos", servicos_path%> |
+				<%=link_to "Cases", cases_path%> |  
+				<%=link_to "Produtos", home_path%> | 
+				<%=link_to "Imprensa", imprensa_path%> | 
+				<%=link_to "Noticias", noticias_path%> | 
+				<%=link_to "Eventos", eventos_path%> | 
+				<%=link_to "Area Restrita", sessions_path%> |  
+				<%=link_to "Contato", sitecontacts_path%> 
+				
+				<div id="Logos">
+					<br>
+					<%=image_tag("logos/abrava.gif", :alt => "ABRAVA", :class => "logo")%>
+					<%=image_tag("logos/abesco.gif", :alt => "ABESCO", :class => "logo")%>
+					<%=image_tag("logos/anapp.gif", :alt => "ANAPP")%>
+				</div>
+			</div>
+			
+			<div id="Dados">
+				FASTERM<br>
+				Rua da Bahia, 22 - Recreio Estoril<br>
+				Atibaia - SP - CEP 12944060<br>
+				+55 11  4411.1488<br>
+				<a href="mailto:contato@fasterm.com.br">contato@fasterm.com.br</a><br>
+			</div>
+		</div>
+		<div style="text-align:center; font-size:9px; color:#cccccc;">Uma empresa do grupo<br><a href="http://www.nautilus.com.br"><%=image_tag("logo_nautilus.gif")%></a></div>
