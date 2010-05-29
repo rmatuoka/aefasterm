@@ -50265,3 +50265,41 @@ Rendered layouts/_right (531.3ms)
 Rendered layouts/_header (1.0ms)
 Rendered layouts/_footer (1.8ms)
 Completed in 886ms (View: 34, DB: 940) | 200 OK [http://localhost/linhas/10/categorias/6]
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-05-29 18:01:22) [GET]
+  [4;36;1mHighlight Load (77.7ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (144.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (68.2ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (134.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (65.6ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (251.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (64.6ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (539.7ms)
+  [4;35;1mCase Columns (60.7ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (73.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (58.9ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1092ms (View: 80, DB: 1100) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (50.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CasesController#index (for ::1 at 2010-05-29 18:01:27) [GET]
+  [4;36;1mCase Load (147.4ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) GROUP BY category[0m
+Rendering template within layouts/application
+Rendering cases/index
+  [4;35;1mNotice Load (117.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (70.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (243.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (64.5ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (518.7ms)
+  [4;35;1mCase Columns (73.7ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (78.4ms)
+Completed in 858ms (View: 134, DB: 845) | 200 OK [http://localhost/cases]
