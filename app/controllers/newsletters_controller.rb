@@ -1,5 +1,4 @@
 class NewslettersController < ApplicationController
-  
   layout "blank"
   
   def show

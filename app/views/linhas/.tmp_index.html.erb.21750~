@@ -16,8 +16,6 @@
 				<!-- CONTEUDO INTERNA -->
 				<div id="ContentInterno">
 					<%=link_to image_tag("produtos/linha_home.jpg"), linha_categoria_path(8,4)%><%=link_to image_tag("produtos/linha_business.jpg"), linha_categoria_path(9,5)%><%=link_to image_tag("produtos/linha_solar.jpg"), linha_categoria_path(10,6)%><!-- <%=link_to image_tag("produtos/linha_acessorios.jpg"), linha_path(11)%> -->
-					
-					<p align="right"><%=link_to image_tag("btn_esquemas.gif", :style => "float:right;"), instalacao_path%></p>
 				</div>
 			</div>
 		</div>

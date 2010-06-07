@@ -52,6 +52,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :imprensa, :singular=>:imprensa_item
   map.resources :parceiros
   map.resources :sessions
+  map.resources :instalacao, :singular=>:instalacao_item
+  
   
   map.resources :eventos do |eventos|
       eventos.resources :galerias, :has_many => :event_gallery_images

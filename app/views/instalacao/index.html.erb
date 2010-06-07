@@ -1,0 +1,32 @@
+<%content_for :title do%>
+	Fasterm - Esquemas de Instalação
+<%end%>
+
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/esquemas_instalacao.png", :alt => "Esquemas de Instalação")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<span class="DestaqueInterno"><%= image_tag(@Servidor + @Header.image.url("header"))%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Veja como isntalar os nossos produtos</span><br>
+				
+					<div id="Texto">
+							<p>
+								<%=image_tag("esquemas/pdf_esquemainstalacoes1.jpg")%><br>
+								<%=image_tag("esquemas/pdf_esquemainstalacoes2.jpg")%><br>
+								<%=image_tag("esquemas/pdf_esquemainstalacoes3.jpg")%><br>
+							</p>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
