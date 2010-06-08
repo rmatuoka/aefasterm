@@ -50997,3 +50997,100 @@ Rendered layouts/_right (155.2ms)
 Rendered layouts/_header (1.3ms)
 Rendered layouts/_footer (3.0ms)
 Completed in 204ms (View: 152, DB: 37) | 200 OK [http://localhost/eventos/2]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#show (for ::1 at 2010-06-08 12:44:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEvent Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (2.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 3) [0m
+  [4;36;1mEventGallery Load (2.1ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 3) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+  [4;35;1mNotice Load (3.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (6.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (8.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (57.5ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.9ms)
+Completed in 103ms (View: 54, DB: 33) | 200 OK [http://localhost/eventos/3]
+  [4;35;1mSQL (3.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for ::1 at 2010-06-08 12:48:07) [GET]
+  [4;35;1mHighlight Load (2.7ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (3.9ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (3.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (56.0ms)
+  [4;36;1mCase Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.9ms)
+Completed in 271ms (View: 102, DB: 46) | 200 OK [http://localhost/]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for ::1 at 2010-06-08 12:48:09) [GET]
+  [4;35;1mEvent Load (2.7ms)[0m   [0mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;36;1mNotice Load (3.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (54.2ms)
+  [4;36;1mEvent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEventGallery Load (12.7ms)[0m   [0mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+  [4;36;1mEventGallery Load (2.3ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 3) [0m
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (3.3ms)
+Completed in 237ms (View: 186, DB: 44) | 200 OK [http://localhost/eventos]
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for ::1 at 2010-06-08 12:49:09) [GET]
+  [4;35;1mEvent Load (3.4ms)[0m   [0mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;36;1mNotice Load (3.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (11.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (59.8ms)
+  [4;36;1mEvent Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEventGallery Load (2.6ms)[0m   [0mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+  [4;36;1mEventGallery Load (3.6ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 3) [0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (3.3ms)
+Completed in 129ms (View: 85, DB: 37) | 200 OK [http://localhost/eventos]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventosController#index (for ::1 at 2010-06-08 12:49:29) [GET]
+  [4;35;1mEvent Load (3.7ms)[0m   [0mSELECT * FROM `events` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;36;1mNotice Load (3.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (8.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (54.4ms)
+  [4;36;1mEvent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEventGallery Load (2.1ms)[0m   [0mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 2) [0m
+  [4;36;1mEventGallery Load (2.2ms)[0m   [0;1mSELECT * FROM `event_galleries` WHERE (`event_galleries`.event_id = 3) [0m
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (2.9ms)
+Completed in 118ms (View: 77, DB: 35) | 200 OK [http://localhost/eventos]

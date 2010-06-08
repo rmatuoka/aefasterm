@@ -20,7 +20,7 @@
 					
 					<%@Eventos.each do |e|%>
 					<div id="Evento">
-						<%=link_to image_tag("dest_eventos.jpg"), evento_path(e)%>
+						<%=link_to image_tag(@Servidor + e.image.url("home_evt")), evento_path(e)%>
 						<span class="Data"><%=e.date_start.to_date.strftime("%d/%m/%Y")%></span>
 						<span class="Titulo"><%=e.title%></span>
 						<span class="Icones">
