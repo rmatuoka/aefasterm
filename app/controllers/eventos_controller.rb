@@ -4,7 +4,7 @@ class EventosController < ApplicationController
   end
   
   def show
-    @Evento = Event.first(params[:id])
+    @Evento = Event.find(params[:id])
     
     #SELECIONA GALERIAS
     @Galerias = @Evento.event_galleries.all
