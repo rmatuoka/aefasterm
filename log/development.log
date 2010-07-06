@@ -51430,3 +51430,86 @@ Completed in 368ms (View: 56, DB: 34) | 200 OK [http://localhost/sitecontacts/ne
     ./script/server:3
     -e:2:in `load'
     -e:2
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#index (for ::1 at 2010-07-06 12:37:44) [GET]
+Redirected to http://localhost:3000/sitecontacts/new
+Completed in 3ms (DB: 4) | 302 Found [http://localhost/sitecontacts]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SitecontactsController#new (for ::1 at 2010-07-06 12:37:55) [GET]
+  [4;36;1mSitecontact Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `sitecontacts`[0m
+Rendering template within layouts/application
+Rendering sitecontacts/new
+  [4;35;1mNotice Load (4.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (7.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (39.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 64ms (View: 37, DB: 25) | 200 OK [http://localhost/sitecontacts/new]
+/!\ FAILSAFE /!\  Tue Jul 06 12:39:26 -0300 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on '187.35.155.211' (60)
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/rafaelmatuokachiocchetti/Desktop/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    -e:2:in `load'
+    -e:2
