@@ -1,0 +1,32 @@
+<%content_for :title do%>
+	Fasterm - Depoimentos
+<%end%>
+
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/depoimentos.png", :alt => "Depoimentos")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+				
+					<div id="Texto">
+						<%if !@Depoimentos.blank?%>
+							<%@Depoimentos.each do |d|%>
+								<span class="" style="font-family:'Trebuchet MS'; color:#BF5F2C; font-size:20px;"><%=d.name%></span>
+								<p><i><%=d.testimonial%></i></p>
+								<span style="font-family:Verdana; color:#777777; font-size:12px; float:right;"><%=d.company%></span>
+								<span style="font-family:Verdana; color:#777777; font-size:12px; float:right;"><%=d.position%> / </span> 
+								
+							<%end%>
+						<%end%>
+					</div>
+				</div>
+			</div>
+		</div>
