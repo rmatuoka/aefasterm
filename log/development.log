@@ -52458,3 +52458,58 @@ Rendered layouts/_right (457.1ms)
 Rendered layouts/_header (0.9ms)
 Rendered layouts/_footer (1.9ms)
 Completed in 470ms (View: 35, DB: 551) | 200 OK [http://localhost/depoimentos/4]
+  [4;35;1mSQL (54.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (64.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-20 11:57:37) [GET]
+  [4;35;1mHighlight Load (67.0ms)[0m   [0mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;36;1mCase Load (124.6ms)[0m   [0;1mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mHighlight Columns (65.6ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mNotice Load (98.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (69.1ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (206.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (57.4ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (533.3ms)
+  [4;36;1mCase Columns (72.8ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mScheduleVisit Columns (61.7ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mRequestCatalog Columns (64.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 1051ms (View: 151, DB: 1006) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (69.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:58:20) [GET]
+  [4;35;1mTestimonial Load (72.5ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (97.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (64.1ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (206.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (57.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (457.4ms)
+  [4;36;1mTestimonial Columns (58.4ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (77.9ms)
+Completed in 691ms (View: 128, DB: 681) | 200 OK [http://localhost/depoimentos]
+  [4;35;1mSQL (53.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (86.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:58:25) [GET]
+  [4;35;1mTestimonial Load (71.9ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (113.8ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (78.5ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (208.5ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (56.5ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (489.4ms)
+  [4;36;1mTestimonial Columns (63.6ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (2.5ms)
+Completed in 648ms (View: 49, DB: 733) | 200 OK [http://localhost/depoimentos]
