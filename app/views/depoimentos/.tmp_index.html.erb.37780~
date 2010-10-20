@@ -26,8 +26,6 @@
 								
 							<%end%>
 						<%end%>
-					<br><br>
-					<%=link_to("Envie já o seu depoimento!", new_testimonial_path)%>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,76 @@
+<%content_for :title do%>
+	Fasterm - Envie seu depoimento.
+<%end%>
+
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/depoimentos.png", :alt => "Depoimentos")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<!-- <span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Contato</span><br> -->
+				
+					<div id="Texto">
+							<p>
+							Deixe aqui o seu depoimento, expresse todos os seus sentimos em relação à Fasterm
+							</p>
+					</div>
+					
+					<!-- FORM -->
+					<p align=="center">
+					<% form_for(@Testimonial) do |f| %>
+						<table width="400" cellpadding="0" cellspacing="0" border="0">
+						<label>
+						<tr>
+						<td width="80"><p>Nome</p></td>
+						<td><%=f.text_field :name, :class => "form", :style => "width:350px;"%></td>
+						</tr>
+						</label>
+						<tr>
+							<td height="5"></td>
+						</tr>
+						<label>
+						<tr>
+						<td><p>Empresa</p></td>
+						<td><%=f.text_field :company, :class => "form", :style => "width:350px;"%></td>
+						</tr>
+						</label>
+						<tr>
+							<td height="5"></td>
+						</tr>
+						<label>
+						<tr>
+						<td><p>Cargo</p></td>
+						<td><%=f.text_field :position, :class => "form", :style => "width:350px;"%></td>
+						</tr>
+						</label>
+						<tr>
+							<td height="5"></td>
+						</tr>
+						
+						<label>
+						<tr>
+						<td valign="top"><p>Depoimento</p></td>
+						<td><%=f.text_area :testimonial, :class => "form", :style => "width:350px; height:300px;"%></td>
+						</tr>
+						</label>
+						<tr>
+							<td height="5"></td>
+						</tr>
+						<tr>
+						<td colspan="2" align="right"><%= image_submit_tag "botoes/enviar_blue.gif", :alt => "Enviar" %></td>
+						</tr>
+						</table>
+					<%end%>
+					</p>
+				</div>
+			</div>
+		</div>

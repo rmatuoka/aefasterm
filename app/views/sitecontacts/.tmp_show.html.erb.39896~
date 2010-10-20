@@ -1,0 +1,33 @@
+<%content_for :title do%>
+	Fasterm - Contate-nos
+<%end%>
+
+
+<%content_for :header do%>
+	<!-- HEADER -->
+	<div id="HeaderInternas">
+		<%= image_tag("titulos/contato.png", :alt => "Contato")%>
+	</div>
+<%end%>
+
+		<div id="Content" class="zeraMagem">
+			<%= render :file => "layouts/_right.html.erb" %>
+			
+			<div id="HomeLeft">
+				<!-- CONTEUDO INTERNA -->
+				<div id="ContentInterno">
+					<!-- <span class="DestaqueInterno"><%= image_tag("dest_interna.jpg")%></span>
+					<span class="Titulo"><%= image_tag("bullet_mais.png")%> Contato</span><br> -->
+				
+					<div id="Texto">
+							<p>
+							Sua mensagem foi enviada com sucesso!<br>
+							<br>
+							Em breve entraremos em contato.<br>
+							<br>
+							<i>Equipe Fasterm</i>
+							</p>
+					</div>
+				</div>
+			</div>
+		</div>

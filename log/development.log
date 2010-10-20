@@ -51950,3 +51950,511 @@ Rendered layouts/_right (43.2ms)
 Rendered layouts/_header (2.0ms)
 Rendered layouts/_footer (3.5ms)
 Completed in 149ms (View: 115, DB: 32) | 200 OK [http://localhost/depoimentos]
+/!\ FAILSAFE /!\  Tue Oct 19 16:29:03 -0200 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on '187.35.155.211' (60)
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    -e:2:in `load'
+    -e:2
+/!\ FAILSAFE /!\  Tue Oct 19 17:00:23 -0200 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on '187.35.155.211' (60)
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/rafaelmatuokachiocchetti/Sites/Rails/aefasterm/vendor/rails/railties/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    -e:2:in `load'
+    -e:2
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-19 17:07:40) [GET]
+  [4;36;1mTestimonial Load (3.3ms)[0m   [0;1mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;35;1mNotice Load (3.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (15.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (4.8ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (52.4ms)
+  [4;35;1mTestimonial Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 76ms (View: 35, DB: 40) | 200 OK [http://localhost/depoimentos]
+  [4;36;1mSQL (52.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-20 11:33:10) [GET]
+  [4;36;1mHighlight Load (67.8ms)[0m   [0;1mSELECT * FROM `highlights` WHERE (published = 1) ORDER BY position ASC[0m
+  [4;35;1mCase Load (133.5ms)[0m   [0mSELECT * FROM `cases` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mHighlight Columns (61.8ms)[0m   [0;1mSHOW FIELDS FROM `highlights`[0m
+  [4;35;1mNotice Load (103.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (62.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (209.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (77.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (584.8ms)
+  [4;35;1mCase Columns (78.6ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mScheduleVisit Columns (61.1ms)[0m   [0;1mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;35;1mRequestCatalog Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `request_catalogs`[0m
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.3ms)
+Completed in 1381ms (View: 430, DB: 1021) | 200 OK [http://localhost/]
+  [4;36;1mSQL (73.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (48.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-20 11:33:12) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-20 11:33:15) [GET]
+
+ActionController::RoutingError (No route matches "/icone.ico" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (52.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:33:30) [GET]
+  [4;36;1mTestimonial Load (71.8ms)[0m   [0;1mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;35;1mNotice Load (101.4ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (65.4ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (211.0ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (68.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (475.7ms)
+  [4;35;1mTestimonial Columns (59.6ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.5ms)
+Completed in 713ms (View: 128, DB: 685) | 200 OK [http://localhost/depoimentos]
+  [4;36;1mSQL (96.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (134.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-20 11:47:25) [GET]
+
+ActionController::RoutingError (No route matches "/testimonials/new" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (53.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#new (for 127.0.0.1 at 2010-10-20 11:47:44) [GET]
+  [4;36;1mTestimonial Columns (69.1ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/application
+Rendering testimonials/new
+  [4;35;1mNotice Load (98.6ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (63.3ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (205.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (54.9ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (521.0ms)
+
+ActionView::TemplateError (undefined method `email' for #<Testimonial:0x102f1ff38>) on line #43 of app/views/testimonials/new.html.erb:
+40: 						<label>
+41: 						<tr>
+42: 						<td><p>Empresa</p></td>
+43: 						<td><%=f.text_field :email, :class => "form", :style => "width:350px;"%></td>
+44: 						</tr>
+45: 						</label>
+46: 						<tr>
+
+    app/views/testimonials/new.html.erb:43
+    app/views/testimonials/new.html.erb:29
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (53.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (54.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (55.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#new (for 127.0.0.1 at 2010-10-20 11:48:12) [GET]
+  [4;35;1mTestimonial Columns (198.7ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/application
+Rendering testimonials/new
+  [4;36;1mNotice Load (97.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (87.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (207.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (56.5ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (561.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 790ms (View: 136, DB: 757) | 200 OK [http://localhost/testimonials/new]
+  [4;36;1mSQL (65.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#new (for 127.0.0.1 at 2010-10-20 11:48:48) [GET]
+  [4;36;1mTestimonial Columns (61.2ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/application
+Rendering testimonials/new
+  [4;35;1mNotice Load (101.7ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (63.7ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (207.8ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (54.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (455.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 615ms (View: 120, DB: 609) | 200 OK [http://localhost/testimonials/new]
+  [4;35;1mSQL (98.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#new (for 127.0.0.1 at 2010-10-20 11:48:56) [GET]
+  [4;35;1mTestimonial Columns (57.1ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/application
+Rendering testimonials/new
+  [4;36;1mNotice Load (96.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (63.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (245.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (62.6ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (495.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 580ms (View: 49, DB: 677) | 200 OK [http://localhost/testimonials/new]
+  [4;36;1mSQL (53.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#new (for 127.0.0.1 at 2010-10-20 11:49:15) [GET]
+  [4;36;1mTestimonial Columns (64.3ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/application
+Rendering testimonials/new
+  [4;35;1mNotice Load (143.5ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (60.9ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (203.9ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (63.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (502.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 596ms (View: 53, DB: 642) | 200 OK [http://localhost/testimonials/new]
+  [4;35;1mSQL (51.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (76.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#create (for 127.0.0.1 at 2010-10-20 11:49:20) [POST]
+  Parameters: {"x"=>"36", "y"=>"9", "authenticity_token"=>"/N5zfdNQh5c1l23Ka2X/r/rBEHmYnS0AJP2aqjYUjc8=", "testimonial"=>{"position"=>"teste", "company"=>"teste", "name"=>"teste", "testimonial"=>"asdasd"}}
+  [4;35;1mTestimonial Columns (57.3ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTestimonial Create (92.0ms)[0m   [0mINSERT INTO `testimonials` (`name`, `position`, `company`, `created_at`, `updated_at`, `published`, `testimonial`) VALUES('teste', 'teste', 'teste', '2010-10-20 13:49:21', '2010-10-20 13:49:21', NULL, 'asdasd')[0m
+  [4;36;1mSQL (76.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (54.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (61.7ms)[0m   [0;1mCOMMIT[0m
+
+ActionController::RoutingError (depoimento_url failed to generate from {:action=>"show", :controller=>"depoimentos"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["depoimentos", :id] - are they all satisfied?):
+  (eval):16:in `depoimento_path'
+  app/controllers/testimonials_controller.rb:10:in `create'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (54.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#create (for 127.0.0.1 at 2010-10-20 11:49:59) [POST]
+  Parameters: {"x"=>"36", "y"=>"9", "authenticity_token"=>"/N5zfdNQh5c1l23Ka2X/r/rBEHmYnS0AJP2aqjYUjc8=", "testimonial"=>{"position"=>"teste", "company"=>"teste", "name"=>"teste", "testimonial"=>"asdasd"}}
+  [4;35;1mTestimonial Columns (69.7ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTestimonial Create (65.9ms)[0m   [0mINSERT INTO `testimonials` (`name`, `position`, `company`, `created_at`, `updated_at`, `published`, `testimonial`) VALUES('teste', 'teste', 'teste', '2010-10-20 13:49:59', '2010-10-20 13:49:59', NULL, 'asdasd')[0m
+  [4;36;1mSQL (54.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (81.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (52.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/depoimentos/3
+Completed in 389ms (DB: 486) | 302 Found [http://localhost/testimonials]
+  [4;35;1mSQL (53.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (85.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#show (for 127.0.0.1 at 2010-10-20 11:50:00) [GET]
+  Parameters: {"id"=>"3"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (119.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (86.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#show (for 127.0.0.1 at 2010-10-20 11:50:23) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/application
+Rendering depoimentos/show
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 16ms (View: 13, DB: 206) | 200 OK [http://localhost/depoimentos/3]
+  [4;35;1mSQL (52.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (62.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#show (for 127.0.0.1 at 2010-10-20 11:51:14) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/application
+Rendering depoimentos/show
+  [4;35;1mNotice Load (99.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (61.1ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (207.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (60.4ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (527.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 544ms (View: 112, DB: 543) | 200 OK [http://localhost/depoimentos/3]
+  [4;35;1mSQL (80.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (107.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:52:36) [GET]
+  [4;35;1mTestimonial Load (124.5ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (193.3ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (83.2ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (293.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (147.2ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (748.0ms)
+  [4;36;1mTestimonial Columns (129.9ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 1022ms (View: 45, DB: 1159) | 200 OK [http://localhost/depoimentos]
+  [4;35;1mSQL (82.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (74.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:52:37) [GET]
+  [4;35;1mTestimonial Load (90.2ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (319.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (91.9ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (311.0ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (188.1ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (939.4ms)
+  [4;36;1mTestimonial Columns (184.5ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.5ms)
+Completed in 1237ms (View: 45, DB: 1342) | 200 OK [http://localhost/depoimentos]
+  [4;35;1mSQL (54.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:53:16) [GET]
+  [4;35;1mTestimonial Load (72.0ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (102.2ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (64.7ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (219.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (60.0ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (550.5ms)
+  [4;36;1mTestimonial Columns (58.8ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (2.8ms)
+Completed in 711ms (View: 126, DB: 685) | 200 OK [http://localhost/depoimentos]
+  [4;35;1mSQL (66.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (66.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:53:28) [GET]
+  [4;35;1mTestimonial Load (74.2ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (95.6ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (67.0ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (203.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (60.7ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (456.5ms)
+  [4;36;1mTestimonial Columns (60.6ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 617ms (View: 49, DB: 695) | 200 OK [http://localhost/depoimentos]
+  [4;35;1mSQL (55.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (62.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#index (for 127.0.0.1 at 2010-10-20 11:53:52) [GET]
+  [4;35;1mTestimonial Load (71.7ms)[0m   [0mSELECT * FROM `testimonials` WHERE (published = 1) [0m
+Rendering template within layouts/application
+Rendering depoimentos/index
+  [4;36;1mNotice Load (303.1ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (175.6ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (330.9ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (81.9ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (920.4ms)
+  [4;36;1mTestimonial Columns (77.3ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (2.6ms)
+Completed in 1098ms (View: 51, DB: 1158) | 200 OK [http://localhost/depoimentos]
+  [4;35;1mSQL (62.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (52.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#new (for 127.0.0.1 at 2010-10-20 11:54:06) [GET]
+  [4;35;1mTestimonial Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/application
+Rendering testimonials/new
+  [4;36;1mNotice Load (102.7ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;35;1mNotice Columns (62.3ms)[0m   [0mSHOW FIELDS FROM `notices`[0m
+  [4;36;1mNotice Load (222.4ms)[0m   [0;1mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;35;1mNewsletter Columns (64.8ms)[0m   [0mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (479.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 563ms (View: 43, DB: 630) | 200 OK [http://localhost/testimonials/new]
+  [4;36;1mSQL (57.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestimonialsController#create (for 127.0.0.1 at 2010-10-20 11:54:16) [POST]
+  Parameters: {"x"=>"15", "y"=>"3", "authenticity_token"=>"/N5zfdNQh5c1l23Ka2X/r/rBEHmYnS0AJP2aqjYUjc8=", "testimonial"=>{"position"=>"teste", "company"=>"teste", "name"=>"teste", "testimonial"=>"teste"}}
+  [4;36;1mTestimonial Columns (67.7ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mSQL (61.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mTestimonial Create (57.3ms)[0m   [0;1mINSERT INTO `testimonials` (`name`, `position`, `company`, `created_at`, `updated_at`, `published`, `testimonial`) VALUES('teste', 'teste', 'teste', '2010-10-20 13:54:16', '2010-10-20 13:54:16', NULL, 'teste')[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (55.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTestimonial Update (64.7ms)[0m   [0mUPDATE `testimonials` SET `updated_at` = '2010-10-20 13:54:16', `published` = 0 WHERE `id` = 4[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/depoimentos/4
+Completed in 430ms (DB: 533) | 302 Found [http://localhost/testimonials]
+  [4;35;1mSQL (65.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (53.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DepoimentosController#show (for 127.0.0.1 at 2010-10-20 11:54:17) [GET]
+  Parameters: {"id"=>"4"}
+Rendering template within layouts/application
+Rendering depoimentos/show
+  [4;35;1mNotice Load (100.2ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 1[0m
+  [4;36;1mNotice Columns (63.2ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mNotice Load (207.3ms)[0m   [0mSELECT * FROM `notices` WHERE (published = 1) ORDER BY id DESC LIMIT 3[0m
+  [4;36;1mNewsletter Columns (61.3ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+Rendered layouts/_right (457.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 470ms (View: 35, DB: 551) | 200 OK [http://localhost/depoimentos/4]
