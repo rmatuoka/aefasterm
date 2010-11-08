@@ -2,21 +2,6 @@
 	Fasterm - Aquecedores domésticos e empresariais, painéis solares e acessórios.
 <%end%>
 
-<%content_for :head do%>
-	<SCRIPT language="JavaScript">
-	<!--
-	$j(document).ready(function() {
-   		$j("#PopUp").show();
-		
-		$j("#fechar").click(function() {
-			$j("#PopUp").hide();
-	    });
-
- 	});
-	// -->
-	</SCRIPT>
-<%end%>
-
 <%content_for :header do%>
 	<div id="Highlight">
 			<div id="Galeria">

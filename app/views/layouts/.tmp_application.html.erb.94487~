@@ -45,17 +45,7 @@
 </style>
 </head>
 <body>
-	<div id="Geral">
-		<!-- DHTML -->
-		<div id="PopUp" style="position:absolute; top:20px; width:100%; height:100%; z-index:99; display:none; cursor:pointer;">
-			<center>
-				<div style="width:360px	;">
-					<img src="/images/ico_fechar.gif" id="fechar" border="0" align="right" /><br>
-					<%=link_to image_tag("splash.jpg"), "/hoteleiros"%>	
-				</div>
-				
-			</center>
-		</div>	
+	<div id="Geral">	
 		<%= render :file => "layouts/_header.html.erb" %>
 		
 		<%= yield :header %>
