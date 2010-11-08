@@ -16,6 +16,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :instalacao, :singular=>:instalacao_item
   map.resources :depoimentos
   map.resources :testimonials
+  map.resources :hoteleiros
   
   
   map.resources :eventos do |eventos|
